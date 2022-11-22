@@ -1,0 +1,64 @@
+/* ====== Contenedor del Footer ====== */
+.footer {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: $body-color;
+
+    .col1__footer {
+        p {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: $text-color;
+            font-size: $parrafos16;
+        }
+    }
+
+    .col2__footer {
+
+        ul {
+            padding-left: 0;
+            list-style: none;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+
+            .item__footer {
+                margin-right: 24px;
+                display: inline-block;
+
+                a {
+                    i {
+                        font-size: 20px;
+                        color: $secondary-color;
+
+                        &:hover {
+                            color: $secondary-color2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .col3__footer {
+        ul {
+            padding-left: 0;
+            list-style: none;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+
+            li {
+                display: inline-block;
+                margin-right: 5px;
+
+                a {
+                    color: $text-color;
+
+                    &:hover {
+                        color: $paragraphcolor;
+                    }
+                }
+            }
+        }
+    }
+}

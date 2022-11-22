@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/js.png" />
+    <!-- Descripcion del sitio -->
+    <meta name="description" content="">
+    <!-- Palabras clave -->
+    <meta name="keywords" content="">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Titulo Web -->
+    <title>Control de Flujos - JavaScript</title>
+    <!-- Animation Animated -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Animation AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper JS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../css/prism.css" />
+    <!-- Iconos Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Iconos FontAwesome -->
+    <script src="https://kit.fontawesome.com/5de37ddf45.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ====== Comienzo del SideBar ====== -->
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../assets/img/js.png" alt="Imagen Perfil">
+                </span>
+                <div class="text logo-text">
+                    <span class="name">Book Personal</span>
+                    <span class="profession">Javascript</span>
+                </div>
+            </div>
+            <i class="bx bx-chevron-right toggle"></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+
+                <!-- <li class="search-box">
+                    <i class="bx bx-search icon"></i>
+                    <input type="text" placeholder="Search...">
+                </li> -->
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../index.html">
+                            <span class="icon">1</span>
+                            <span class="text nav-text">Concepto General</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../pages/flujos.html">
+                            <span class="icon">2</span>
+                            <span class="text nav-text">Control de Flujos</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../pages/ciclos.html">
+                            <span class="icon">3</span>
+                            <span class="text nav-text">Ciclos/Iteraciones</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">4</span>
+                            <span class="text nav-text">Funciones</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">4</span>
+                            <span class="text nav-text">Objetos</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">5</span>
+                            <span class="text nav-text">Arrays</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">6</span>
+                            <span class="text nav-text">Order Function</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">7</span>
+                            <span class="text nav-text">DOM</span>
+                        </a>
+                    </li>
+                    <li class="nav-link" id="contactolink">
+                        <a href="#">
+                            <span class="icon">8</span>
+                            <span class="text nav-text">Eventos</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">9</span>
+                            <span class="text nav-text">Storage y JSON</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">10</span>
+                            <span class="text nav-text">Workshop 1</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">11</span>
+                            <span class="text nav-text">Operadores</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">12</span>
+                            <span class="text nav-text">Librerias</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">13</span>
+                            <span class="text nav-text">Async y Promesas</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">14</span>
+                            <span class="text nav-text">Ajax y Fetch</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">15</span>
+                            <span class="text nav-text">Frameworks</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">16</span>
+                            <span class="text nav-text">NodeJS</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-link-alt icon'></i>
+                        <span class="text nav-text">Redes Sociales</span>
+                    </a>
+                </li>
+            </div> -->
+        </div>
+    </nav>
+
+
+    <main class="home">
+        <!-- ====== Contenido de la Clase 2 ====== -->
+        <div class="container-fluid clase1">
+            <div class="container title__clase1">
+                <div class="row">
+                    <div class="info__clase1">
+                        <h2 id="acerca">
+                            CICLOS E ITERACIONES
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container contenido__clase1">
+                <div class="row">
+                    <div class="col">
+                        <div class="img-cont__clase1">
+                            <img class="fit-cover" src="../assets/img/clase3.png" alt="Imagen Conceptos de la Clase">
+                        </div>
+
+                        <div class="cont__clase1">
+                            <h2>
+                                El Scope
+                            </h2>
+                            <p class="parrafos">
+                                Es el acceso a un valor.
+                            </p>
+                            <p class="parrafos">
+                                Esta es una variable global, por lo tanto se puede acceder a ella desde cualquier parte
+                                del código
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    let i = 1000
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Esta es una variable local, o de bloque por lo tanto solo se tiene acceso a ese valor
+                                dentro del ámbito en el que existe
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    for (let i = 0; i < 10; i++) {
+                                        console.log(i) // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+                                    }
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Bucles en JavaScript
+                            </h2>
+                            <p class="parrafos">
+                                Es una estructura que permite realizar una tarea repetitiva. Va a tener una condicion
+                                ligada a si mismo para evaluar si sigue iterando sobre un elemento.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    / for ( inicio; condicion; incremento ) {
+                                        Sentencia o Instrucción que será ejecutada siempre y cuando la condición sea true
+                                        }
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Veamos un ejemplo:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    for (let i = 5; i <= 10; i = i + 1) {
+                                        console.log(i) // 5, 6, 7, 8, 9
+                                    }
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="cont__clase1">
+                            <h2 class="sub-titulos">
+                                Version en Pseudocodigo
+                            </h2>
+                            <p class="parrafos">
+                                <b>Ejemplo: 1</b>
+                            </p>
+                            <ul class="lista">
+                                <li>Let inicia con 0</li>
+                                <li>Se comprueba que 0 es menor que 10</li>
+                                <li>Se ejecuta la instruccion console.log()</li>
+                                <li>Se hace el incremento sobre la variable i 0 + 1</li>
+                            </ul>
+                            <ul class="lista">
+                                <li>Let inicia con 1</li>
+                                <li>Se comprueba que 0 es menor que 10</li>
+                                <li>Se ejecuta la instruccion console.log()</li>
+                                <li>Se hace el incremento sobre la variable i 1 + 1</li>
+                            </ul>
+                            <ul class="lista">
+                                <li>Let inicia con 2</li>
+                                <li>Se comprueba que 0 es menor que 10</li>
+                                <li>Se ejecuta la instruccion console.log()</li>
+                                <li>Se hace el incremento sobre la variable i 2 + 1</li>
+                            </ul>
+
+                            <p class="parrafos">
+                                <b>Ejemplo: 2</b>
+                            </p>
+                            <ul class="lista">
+                                <li>0</li>
+                                <li>0 <= 10? true </li>
+                                <li>Se ejecuta la instruccion</li>
+                                <li>Se suma 1 a la variable</li>
+                            </ul>
+                            <ul class="lista">
+                                <li>1 <= 10? true </li>
+                                <li>Se ejecuta la instruccion</li>
+                                <li>Se suma 1 a la variable</li>
+                            </ul>
+                            <ul class="lista">
+                                <li>2 <= 10? true </li>
+                                <li>Se ejecuta la instruccion</li>
+                                <li>Se suma 1 a la variable</li>
+                            </ul>
+                            <p class="parrafos">
+                                <b>Ejemplo: 3</b>
+                            </p>
+                            <ul class="lista">
+                                <li>11 <= 10? false --> Ya no se ejecutan las sentencias del for y termina la iteracion.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr class="separadores">
+
+
+                        <div class="cont__clase1">
+                            <h2>
+                                For con contador negativo
+                            </h2>
+                            <p class="parrafos">
+                                El i-- lo que hace es una resta. Osea i -= x va a restar la cantidad establecida.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    for (let i = 100; i >= 90; i--) {
+                                        console.log(i) // 100, 99, 98, 97, 96, 95, 94, 93, 92, 91, 90
+                                    }
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="cont__clase1">
+                            <h2>
+                                For con contador diferente a 1
+                            </h2>
+                            <p class="parrafos">
+                                El i += x va a sumar la cantidad establecida distinta a 1.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    for (let i = 0; i <= 10; i += 2) {
+                                        console.log("codigo") // codigo, codigo, codigo, codigo, codigo, codigo,
+                                    }
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                While
+                            </h2>
+                            <p class="parrafos">
+                                El while tambien itera sobre elementos. Tiene el valor inicial fuera de un bloque, es
+                                decir tiene scope global.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    let valorInicial = 0
+
+                                    while (valorInicial <= 10) {
+                                        console.log(valorInicial); // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+                                        valorInicial++;
+                                    }
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Do..While
+                            </h2>
+                            <p class="parrafos">
+                                Siempre va a ejecutar la instruccion aunque sea una vez.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    let valorDoWhileInicial = 10000
+
+                                    do {
+                                        console.log("aunque sea una vez"); // aunque sea una vez
+                                        valorDoWhileInicial++
+                                    }
+                                    while (valorDoWhileInicial <= 5)
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Switch
+                            </h2>
+                            <p class="parrafos">
+                                Evalua casos comparando datos, si no usamos break, se ejecuta la sentencia posterior
+                                sin importar que no cumpla con el caso.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const fruta = "banana"
+
+                                    switch (fruta) {
+                                        case "banana":
+                                            console.log("El kilo de banana está $300") // El kilo de banana está $300
+                                            break;
+                                        case "naranja":
+                                            console.log("El kilo de naranja está $100")
+                                            break;
+                                        default:
+                                            console.log("Eso no es una fruta oops o no está en nuestra lista de productos")
+                                            break;
+                                    }
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="alert alerta-container" role="alert">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <div>
+                                for que en vez de tener un valor inicial number, va a tener un string.
+                            </div>
+                        </div>
+
+                        <div class="cont__clase1">
+                            <p class="parrafos">
+                                Podriamos usar .length , que nos permite determinar la longitud de una
+                                cadena y te devuelve un numero.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const nombreDelEstudiante = "Williams"
+    
+                                    console.log(nombreDelEstudiante.length) // 8
+    
+                                    for (let i = 0; i < nombreDelEstudiante.length; i++) {
+                                        console.log(nombreDelEstudiante[i].toUpperCase()) // W, I, L, L, I, A, M, S
+    
+                                    }
+                                </code>
+                            </pre>
+                            <div class="cont__clase1">
+                                <ul class="lista">
+                                    <li>0 <= 8</li>
+                                    <li>0 -> w</li>
+                                    <li>1 -> i</li>
+                                    <li>2 -> l</li>
+                                    <li>3 -> l</li>
+                                    <li>4 -> i</li>
+                                    <li>5 -> a</li>
+                                    <li>6 -> m</li>
+                                    <li>7 -> s</li>
+                                    <li>8 -> undefined</li>
+                                </ul>
+                                <ul class="lista">
+                                    <li>0 < 8</li>
+                                    <li>0 -> w</li>
+                                    <li>1 -> i</li>
+                                    <li>2 -> l</li>
+                                    <li>3 -> l</li>
+                                    <li>4 -> i</li>
+                                    <li>5 -> a</li>
+                                    <li>6 -> m</li>
+                                    <li>7 -> s</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Variable acumuladora para preservar todas las iteraciones
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                    let acc = 0
+
+                                    for (let i = 0; i <= 5; i++) {
+                                        acc = acc + i
+                                    }
+
+                                    console.log(acc) // 15
+                                </code>
+                            </pre>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ====== Contenedor del Footer ====== -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-lg-3">
+                    <div class="col col1__footer">
+                        <p>Sitio creado con &#x2764;&#xfe0f; by Miguel Serrao.</p>
+                    </div>
+                    <div class="col col2__footer">
+                        <ul>
+                            <li class="item__footer">
+                                <div>
+                                    <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                </div>
+                            </li>
+                            <li class="item__footer">
+                                <div>
+                                    <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </li>
+                            <li class="item__footer">
+                                <div>
+                                    <a href="#" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col col3__footer">
+                        <ul>
+                            <li><a class="link__footer" href="#">Apuntes de HTML</a></li>
+                            <li><a class="link__footer" href="#">Apuntes de CSS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <!-- ====== Script de Bootstrap ====== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+    <!-- ====== Script de AOS ====== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ====== Script de mi Codigo ====== -->
+    <script src="../js/main.js"></script>
+    <!-- ====== Script de mi Codigo ====== -->
+    <script src="../js/prism.js"></script>
+</body>
+
+</html>

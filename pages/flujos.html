@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/js.png" />
+    <!-- Descripcion del sitio -->
+    <meta name="description" content="">
+    <!-- Palabras clave -->
+    <meta name="keywords" content="">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Titulo Web -->
+    <title>Control de Flujos - JavaScript</title>
+    <!-- Animation Animated -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Animation AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper JS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../css/prism.css" />
+    <!-- Iconos Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Iconos FontAwesome -->
+    <script src="https://kit.fontawesome.com/5de37ddf45.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ====== Comienzo del SideBar ====== -->
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="../assets/img/js.png" alt="Imagen Perfil">
+                </span>
+                <div class="text logo-text">
+                    <span class="name">Book Personal</span>
+                    <span class="profession">Javascript</span>
+                </div>
+            </div>
+            <i class="bx bx-chevron-right toggle"></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+
+                <!-- <li class="search-box">
+                    <i class="bx bx-search icon"></i>
+                    <input type="text" placeholder="Search...">
+                </li> -->
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../index.html">
+                            <span class="icon">1</span>
+                            <span class="text nav-text">Concepto General</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../pages/flujos.html">
+                            <span class="icon">2</span>
+                            <span class="text nav-text">Control de Flujos</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="../pages/ciclos.html">
+                            <span class="icon">3</span>
+                            <span class="text nav-text">Ciclos/Iteraciones</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">4</span>
+                            <span class="text nav-text">Funciones</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">4</span>
+                            <span class="text nav-text">Objetos</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">5</span>
+                            <span class="text nav-text">Arrays</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">6</span>
+                            <span class="text nav-text">Order Function</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">7</span>
+                            <span class="text nav-text">DOM</span>
+                        </a>
+                    </li>
+                    <li class="nav-link" id="contactolink">
+                        <a href="#">
+                            <span class="icon">8</span>
+                            <span class="text nav-text">Eventos</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">9</span>
+                            <span class="text nav-text">Storage y JSON</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">10</span>
+                            <span class="text nav-text">Workshop 1</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">11</span>
+                            <span class="text nav-text">Operadores</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">12</span>
+                            <span class="text nav-text">Librerias</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">13</span>
+                            <span class="text nav-text">Async y Promesas</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">14</span>
+                            <span class="text nav-text">Ajax y Fetch</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">15</span>
+                            <span class="text nav-text">Frameworks</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <span class="icon">16</span>
+                            <span class="text nav-text">NodeJS</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-link-alt icon'></i>
+                        <span class="text nav-text">Redes Sociales</span>
+                    </a>
+                </li>
+            </div> -->
+        </div>
+    </nav>
+
+
+    <main class="home">
+        <!-- ====== Contenido de la Clase 2 ====== -->
+        <div class="container-fluid clase1">
+            <div class="container title__clase1">
+                <div class="row">
+                    <div class="info__clase1">
+                        <h2 id="acerca">
+                            CONTROL DE FLUJOS
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container contenido__clase1">
+                <div class="row">
+                    <div class="col">
+                        <div class="img-cont__clase1">
+                            <img class="fit-cover" src="../assets/img/clase2.png" alt="Imagen Conceptos de la Clase">
+                        </div>
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Variables Booleanos
+                            </h2>
+                            <p class="parrafos">
+                                Son tipos de dato primitivo y tienen 2 posibles valores.
+                            </p>
+                            <ul class="lista">
+                                <li>Valor: Verdadero</li>
+                                <li>Valor: Falso</li>
+                            </ul>
+                            <pre>
+                                <code class="language-javascript">
+                                    const esDocente = true
+                                    const esAlumna = false
+                                    
+                                    console.log(Boolean(esDocente)) // true
+                                    console.log(Boolean(esAlumna)) // false
+                                    console.log(Boolean("Carola")) // true
+                                    console.log(Boolean(-10)) // true
+                                    console.log(Boolean("")) // false
+                                    console.log(Boolean(undefined)) // false 
+                                    console.log(Boolean(null)) // false
+                                    
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Operadores Logicos
+                            </h2>
+                            <p class="parrafos">
+                                En JavaScript, disponemos de los operadores lógicos habituales en lenguajes de
+                                programación como son: es igual, es distinto, menor, menor o igual, mayor, mayor o
+                                igual, and (y), or (o) y not (no).
+                                <br>
+                                <br>
+                                La sintaxis se basa en símbolos, como veremos a continuación.
+                                Cabe destacar que hay que prestar atención a no confundir ‘==’ con ‘=’ porque implican
+                                distintas cosas.
+                            </p>
+                            <h2>
+                                Lista de Operadores Logicos
+                            </h2>
+                            <div class="img-cont__clase1">
+                                <img class="fit-cover" src="../assets/img/operadores.PNG"
+                                    alt="Imagen Conceptos de la Clase">
+                            </div>
+                            <h2>
+                                && AND LOGICO
+                            </h2>
+                            <p class="parrafos">
+                                Normalmente los operando se van a evaluar de izquierda a derecha.
+                                Por Ejemplo: Jamon (Y) Queso.
+                                <br>
+                                Evalua que ambos operandos sean true para devolver true.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const token = 13109831923
+                                    const user = "Miguel"
+                                    const password = "contraseña123"
+
+                                    console.log(user && password && token) // 13109831923
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                En el ejemplo de arriba queremos evaluar que ambos sean true y es por eso que devuelve
+                                false.
+                            </p>
+                            <h2>
+                                Como se compone un operador logico en JavaScript?
+                            </h2>
+                            <p class="parrafos">
+                                Se compone como OPERANDO_1 && OPERANDO_2 --> True si ambos son verdaderos.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    console.log(true && true) // true
+                                    console.log(true && false) // false
+                                    console.log(false && true) // false
+                                    console.log(false && false) // false
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Podemos utilizar mas de 2 operandos en una comparacion.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const token = 13109831923
+                                    password = "contraseña123"
+                                    console.log(user && password && token)
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                El AND(&&) siempre te va a devolver el primer valor false y el ultimo valor true, en el
+                                caso
+                                de que toda la cadena de operandos sea true.
+                            </p>
+                        </div>
+
+                        <div class="cont__clase1">
+
+                            <h2>
+                                || OR LOGICO
+                            </h2>
+                            <p class="parrafos">
+                                Normalmente los operando se van a evaluar de izquierda a derecha.
+                                Por Ejemplo: Jamon (O) Queso.
+                                <br>
+                                Evalua que al menos un operando sea true para devolver true.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    console.log(true || true) // true
+                                    console.log(true || false) // true
+                                    console.log(false || true) // true
+                                    console.log(false || false) // false
+                                </code>
+                            </pre>
+                            <h2>
+                                Uso de AND y OR en una misma evaluacion:
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                    console.log(true && false || true) // true
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+
+                            <h2>
+                                ! NOT LOGICO
+                            </h2>
+                            <p class="parrafos">
+                                Se expresa a traves de un signo de exclamacion, niega el valor Booleano
+                                implicito del dato, quiere decir que invierte su valor booleano.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    console.log(!true)
+                                    console.log(!!false) // Niega a la negacion
+                                    console.log(!!true)
+                                    console.log(!false)
+                                </code>
+                            </pre>
+                            <h2>
+                                Uso de AND y OR en una misma evaluacion:
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                    console.log(true && false || true) // true
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Operadores de Comparacion
+                            </h2>
+                            <p class="parrafos">
+                                Los operadores de comparacion, comparan el valor de los operandos, mas no su estado
+                                booleano,
+                                siempre de la comparacion devuelven un booleano, que puede ser true o false.
+                            </p>
+                            <h2 class="sub-titulos">
+                                Comparacion de Cantidad
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                    console.log(10 > 100) // false
+                                    console.log(10 < 100) // true
+                                    console.log(10 >= 10) // true
+                                    console.log(10 <= 100) // true
+                                    console.log(10 <= 10) // true
+                                </code>
+                            </pre>
+                            <h2 class="sub-titulos">
+                                Comparacion de Valores
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                    console.log("10" == 10) // comparación que no es estrica y que evalúa el valor y no el tipo
+                                    console.log("diez" == 10) // false
+                                </code>
+                            </pre>
+                            <h2 class="sub-titulos">
+                                Comparacion estrictira (Valores Tipo de dato)
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                    console.log("10" === 10) // evalúa valor y tipo de dato = //false
+                                </code>
+                            </pre>
+                            <h2 class="sub-titulos">
+                                Desigualdad
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                    console.log(10 != "10") // false
+                                </code>
+                            </pre>
+                            <h2 class="sub-titulos">
+                                Desigualdad Estricta
+                            </h2>
+                            <p class="parrafos">
+                                Cuando sea diferente por valor o tipo de dato
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    console.log(10 !== "10") // true
+                                    console.log("carola" && 0 || "laura") // laura
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+
+                            <h2>
+                                Condicionales: IF, IF ELSE, IF ELSE IF.
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                    SI la comparacion (entre este operando y esta cosa da true) {
+                                        entonces se ejecuta todo lo que esta aca, que son las sentencias
+                                    }
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Veamos lo siguiente:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    let edadDelUsuario = 15
+                                    let permisoDeLosPadres = false
+                                    const mayoriaDeEdad = 18
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Si el usuario es mayor de edad o tiene el permiso de sus padres, puede asistir al cine a
+                                ver
+                                una pelicula de miedo japones.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    edadDelUsuario = 50
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Veamos ejemplos:
+                            </p>
+                            <h2 class="sub-titulos">
+                                IF:
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                    if (edadDelUsuario >= mayoriaDeEdad || permisoDeLosPadres) {
+                                        console.log("ESTE NIÑO ES ADULTO O TIENE PERMISO DE LOS PADRES") // ESTE NIÑO ES ADULTO O TIENE PERMISO DE LOS PADRES
+                                    }
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                El IF va a ejecutar sus sentencias o instrucciones siempre y cuando la evaluacion del
+                                caso sea true.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    let hijoDelPrimerUser = 10
+                                </code>
+                            </pre>
+                            <h2 class="sub-titulos">
+                                IF ELSE:
+                            </h2>
+                            <p class="parrafos">
+                                Si la evaluacion del IF da false
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    if (hijoDelPrimerUser >= mayoriaDeEdad || permisoDeLosPadres) {
+                                        console.log("Usted puede ver la película")
+                                    } else {
+                                        console.log("Tas chikito, vaya a su casa") // Tas chikito, vaya a su casa
+                                    }
+                                </code>
+                            </pre>
+
+                            <h2 class="sub-titulos">
+                                IF ELSE IF ELSE:
+                            </h2>
+                            <p class="parrafos">
+                                El else (sino) siempre ejecuta sus intrucciones cuando la evaluación del if es falsa
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    if (hijoDelPrimerUser >= mayoriaDeEdad) {
+                                        console.log("puede acceder al cine")
+                                    } else if (permisoDeLosPadres) {
+                                        console.log("tiene permiso de los padres")
+                                    } else {
+                                        console.log("No tiene permiso") // No tiene permiso
+                                    }
+                                </code>
+                            </pre>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ====== Contenedor del Footer ====== -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-lg-3">
+                    <div class="col col1__footer">
+                        <p>Sitio creado con &#x2764;&#xfe0f; by Miguel Serrao.</p>
+                    </div>
+                    <div class="col col2__footer">
+                        <ul>
+                            <li class="item__footer">
+                                <div>
+                                    <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                </div>
+                            </li>
+                            <li class="item__footer">
+                                <div>
+                                    <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </li>
+                            <li class="item__footer">
+                                <div>
+                                    <a href="#" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col col3__footer">
+                        <ul>
+                            <li><a class="link__footer" href="#">Apuntes de HTML</a></li>
+                            <li><a class="link__footer" href="#">Apuntes de CSS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <!-- ====== Script de Bootstrap ====== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+    <!-- ====== Script de AOS ====== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ====== Script de mi Codigo ====== -->
+    <script src="../js/main.js"></script>
+    <!-- ====== Script de mi Codigo ====== -->
+    <script src="../js/prism.js"></script>
+</body>
+
+</html>
