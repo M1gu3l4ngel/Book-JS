@@ -229,6 +229,20 @@
                                 Es una estructura que permite realizar una tarea repetitiva. Va a tener una condicion
                                 ligada a si mismo para evaluar si sigue iterando sobre un elemento.
                             </p>
+                            <h2>
+                                Tipos de Bucles
+                            </h2>
+                            <ul class="lista">
+                                <li> <b>Ciclos por conteo</b>: <br> Repiten un bloque de código un número de veces
+                                    específico. Estructura for.</li>
+                            </ul>
+                            <ul class="lista">
+                                <li> <b>Ciclos condicionales</b>: <br> Repiten un bloque de código mientras la condición
+                                    evaluada es verdadera. Estructuras while y do...while.</li>
+                            </ul>
+                            <p class="parrafos">
+
+                            </p>
                             <pre>
                                 <code class="language-javascript">
                                     / for ( inicio; condicion; incremento ) {
@@ -306,6 +320,28 @@
 
 
                         <div class="cont__clase1">
+
+                            <h2>
+                                Estructura FOR
+                            </h2>
+                            <p class="parrafos">
+                                El <b>"desde"</b> es la zona en la que se establecen los valores iniciales de las
+                                variables que
+                                controlan el ciclo.
+                                <br>
+                                El <b>"hasta"</b> es el único elemento que decide si se repite o se detiene el ciclo.
+                                <br>
+                                La <b>"actualización"</b> es el nuevo valor que se asigna después de cada repetición a
+                                las
+                                variables que controlan la repetición.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    for(desde; hasta; actualización) {
+                                        … //lo que se escriba acá se ejecutará mientras dure el ciclo
+                                       }                                       
+                                </code>
+                            </pre>
                             <h2>
                                 For con contador negativo
                             </h2>
@@ -335,7 +371,76 @@
                                     }
                                 </code>
                             </pre>
+
+
+                            <h2>
+                                Ejemplo práctico: Turnos
+                            </h2>
+                            <p class="parrafos">
+                                Algoritmo para dar turno del 1 al 20 a los nombres ingresados.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    for (let i = 1; i <= 20; i++) {
+                                        // En cada repetición solicitamos un nombre.
+                                        let ingresarNombre = prompt("Ingresar nombre");
+                                        // Informamos el turno asignado usando el número de repetición (i).
+                                        alert(" Turno  N° "+i+" Nombre: "+ingresarNombre);
+                                    }
+                                </code>
+                            </pre>
                         </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Sentencia Break
+                            </h2>
+                            <p class="parrafos">
+                                A veces, cuando escribimos una estructura for, necesitamos que bajo cierta condición el
+                                ciclo se interrumpa. Para eso se utiliza la sentencia break.
+                                Al escribir esa línea dentro de un ciclo for, el mismo se interrumpirá como si hubiera
+                                finalizado.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    for (let i = 1; i <= 10; i++) {
+                                        //Si la variable i es igual 5 interrumpo el for. 
+                                        if(i == 5){
+                                            break;
+                                        }
+                                        alert(i);
+                                    }                                    
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Sentencia Continue
+                            </h2>
+                            <p class="parrafos">
+                                A veces, cuando escribimos una estructura for, necesitamos que bajo cierta condición, el
+                                ciclo saltee esa repetición y siga con la próxima. Para eso se utiliza la sentencia
+                                continue.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    for (let i = 1; i <= 10; i++) {
+                                        //Si la variable i es 5, no se interpreta la repetición
+                                        if(i == 5){
+                                            continue;
+                                        }
+                                        alert(i);
+                                    }                                                                        
+                                </code>
+                            </pre>
+                        </div>
+
+
 
                         <hr class="separadores">
 
@@ -346,6 +451,27 @@
                             <p class="parrafos">
                                 El while tambien itera sobre elementos. Tiene el valor inicial fuera de un bloque, es
                                 decir tiene scope global.
+                                <br>
+                                <br>
+                                La estructura while permite crear bucles que se ejecutan cero o más veces, dependiendo
+                                de la condición indicada.
+                                El funcionamiento del bucle while se resume en: mientras se cumpla la condición
+                                indicada, repite las instrucciones incluidas dentro del bucle.
+                                <br>
+                                <br>
+                                Cuando usamos while, asumimos que en algún momento la repetición va a finalizar; si la
+                                comparación no se realiza adecuadamente podemos generar el llamado “bucle infinito”:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    let repetir = true;
+                                    while(repetir){
+                                        console.log("Al infinito y...¡Más allá!");
+                                    }
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Como tambien podemos observar:
                             </p>
                             <pre>
                                 <code class="language-javascript">
@@ -367,6 +493,12 @@
                             </h2>
                             <p class="parrafos">
                                 Siempre va a ejecutar la instruccion aunque sea una vez.
+                                <br>
+                                <br>
+                                La estructura do...while permite crear bucles que se ejecutan una o más veces,
+                                dependiendo de la condición indicada.
+                                A diferencia de while, garantiza que el bloque de código se interpreta al menos una vez,
+                                porque la condición se evalúa al final.
                             </p>
                             <pre>
                                 <code class="language-javascript">
@@ -390,6 +522,11 @@
                             <p class="parrafos">
                                 Evalua casos comparando datos, si no usamos break, se ejecuta la sentencia posterior
                                 sin importar que no cumpla con el caso.
+                                <br>
+                                <br>
+                                La estructura switch está especialmente diseñada para manejar de forma sencilla
+                                múltiples condiciones sobre la misma variable (técnicamente se podría resolver con un
+                                if, pero el uso de switch es más ordenado).
                             </p>
                             <pre>
                                 <code class="language-javascript">
@@ -405,6 +542,33 @@
                                         default:
                                             console.log("Eso no es una fruta oops o no está en nuestra lista de productos")
                                             break;
+                                    }
+                                </code>
+                            </pre>
+                            <h2>
+                                Ejemplo aplicado: WHILE y SWITCH
+                            </h2>
+                            <p class="parrafos">
+                                Algoritmo que hace la operación según la entrada, pero ignora la ejecución de bloque si
+                                la entrada es en “ESC”.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    let entrada = prompt("Ingresar un nombre");
+                                    //Repetimos hasta que se ingresa "ESC"
+                                    while(entrada != "ESC" ){
+                                    switch (entrada) {
+                                        case "ANA":
+                                                alert("Hola Ana");
+                                                break;
+                                            case "JUAN":
+                                                alert("Hola Juan");
+                                                break;
+                                        default:
+                                            alert("¿Quien Eres?")
+                                            break;
+                                    }
+                                    entrada = prompt("Ingresar un nombre");
                                     }
                                 </code>
                             </pre>

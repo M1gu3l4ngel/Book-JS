@@ -194,12 +194,18 @@
 
                         <div class="cont__clase1">
                             <h2>
-                                Tips recomendados
+                                Conceptos Generales
                             </h2>
                             <ul class="lista">
                                 <li>Eliminar siempre los console.log para entregar un proyecto.</li>
                                 <li>Script: Son ordenes o instrucciones que serán ejecutadas por el navegador.</li>
                                 <li>Sentencia: Es una serie de instrucciones.</li>
+                                <li>No se define el tipo de variables</li>
+                                <li>Javascript tiene tipado debil</li>
+                                <li>Las variables no precisan que se le asignen un tipo especifico de dato</li>
+                                <li>Hay 2 formas de declarar variables, no hay que declarar el tipado</li>
+                                <li>En JavaScript no es necesario el uso de punto y coma</li>
+                                <li>En JavaScript tampoco se usan las eñes</li>
                             </ul>
                         </div>
 
@@ -243,6 +249,21 @@
                             <p class="parrafos">
                                 Como tambien identacion o sangria.
                             </p>
+                            <h2>
+                                Palabras Reservadas
+                            </h2>
+                            <p class="parrafos">
+                                Son aquellas que se utilizan para construir las sentencias de JavaScript y que por tanto
+                                no pueden ser utilizadas libremente.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    break, case, continue, default, let
+                                    delete, do, else, for, function, if, in, instanceof, new, return, 
+                                    switch, this, throw, try, typeof, var, void, while, with, y varias más
+
+                                </code>
+                            </pre>
                         </div>
 
                         <hr class="separadores">
@@ -263,22 +284,6 @@
                                 const emailUsuario = true
                                 </code>
                             </pre>
-                        </div>
-
-                        <hr class="separadores">
-
-                        <div class="cont__clase1">
-                            <h2>
-                                Conceptos Generales
-                            </h2>
-                            <ul class="lista">
-                                <li>No se define el tipo de variables</li>
-                                <li>Javascript tiene tipado debil</li>
-                                <li>Las variables no precisan que se le asignen un tipo especifico de dato</li>
-                                <li>Hay 2 formas de declarar variables, no hay que declarar el tipado</li>
-                                <li>En JavaScript no es necesario el uso de punto y coma</li>
-                                <li>En JavaScript tampoco se usan las eñes</li>
-                            </ul>
                         </div>
 
                         <hr class="separadores">
@@ -339,6 +344,16 @@
                                 cambiar de contenido a lo largo de la ejecución de un programa.
                                 En las variables almacenamos diversos tipos de datos que utilizamos en la aplicación.
                             </p>
+                            <pre>
+                                <code class="language-javascript">
+                                        //Declaración de variable ES5. 
+                                        var nombre = “John”; // DEPRECADO!!!
+
+                                        //Declaración de variable ES6.
+                                        let apellido = “Doe”;
+                                        const curso = "JavaScript";
+                                </code>
+                            </pre>
                             <h2>
                                 Declaracion de Variables
                             </h2>
@@ -347,7 +362,57 @@
                                 const. Escribimos una de estas palabras claves seguido del nombre de nuestra variable.
                                 Para los nombres no debemos utilizar ni espacios ni caracteres especiales.
                             </p>
-                            <h2 class="sub-titulos">
+                            <pre>
+                                <code class="language-javascript">
+                                    // Correcto
+                                    let apellido
+                                    let telefono
+                                    const anioNacimiento
+                                    
+                                    // Incorrecto
+                                    var año // DEPRECADO Y USA EÑE!!!
+                                    var teléfono móvil // DEPRECADO Y USA ACENTOS!!!
+                                </code>
+                            </pre>
+                            <h2>
+                                Asignacion de Valores
+                            </h2>
+                            <p class="parrafos">
+                                En una variable podemos asignar distintos tipos de valores mediante el operador de
+                                asignación, que es el símbolo de igualdad (=).
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    // Declaración de Variables
+                                    let edad
+                                    let nombre
+                                    let apellido
+
+                                    // Asignación de Valores
+                                    edad = 5
+                                    nombre = "John R."
+                                    apellido = 'Doe'
+                                </code>
+                            </pre>
+                            <h2>
+                                Inicializar Variables
+                            </h2>
+                            <p class="parrafos">
+                                Podemos declarar una variable y asignarle un valor inicial en el mismo proceso:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    // Variables Inicializadas
+                                    let edad = 5 
+                                    const nombre = "John R."
+                                    const apellido = 'Doe'
+
+                                </code>
+                            </pre>
+
+
+
+                            <h2>
                                 Variable - (Const)
                             </h2>
                             <p class="parrafos">
@@ -388,7 +453,7 @@
 
 
 
-                            <h2 class="sub-titulos">
+                            <h2>
                                 Variable - (Let)
                             </h2>
                             <p class="parrafos">
@@ -426,7 +491,7 @@
                                 </code>
                             </pre>
 
-                            <h2 class="sub-titulos">
+                            <h2>
                                 Variable - (Var)
                             </h2>
                             <p class="parrafos">
@@ -441,7 +506,8 @@
                             <div class="alert alerta-container" role="alert">
                                 <i class="fa-solid fa-circle-info"></i>
                                 <div>
-                                    Se recomienda no usar o declarar variables con VAR. Ya que esta obsoleto por JavaScript.
+                                    Se recomienda no usar o declarar variables con VAR. Ya que esta obsoleto por
+                                    JavaScript.
                                 </div>
                             </div>
                         </div>
@@ -457,7 +523,7 @@
                                 para manipular valores
                             </p>
 
-                            <h2 class="sub-titulos">
+                            <h2>
                                 String:
                             </h2>
                             <p class="parrafos">
@@ -484,7 +550,7 @@
                         </div>
 
                         <div class="cont__clase1">
-                            <h2 class="sub-titulos">
+                            <h2>
                                 Number:
                             </h2>
                             <p class="parrafos">
@@ -523,7 +589,7 @@
                                 <code class="language-javascript">
                                     let numeroA = 1;
                                     let numeroB = 2;
-                                    const NUMEROC = 3;
+                                    const numeroC = 3;
 
                                     //Suma de dos números (1 + 2 = 3)
                                     let resultadoSuma = numeroA + numeroB;
@@ -532,7 +598,7 @@
                                     let resultadoResta = numeroB - numeroA;
 
                                     //Producto de dos números (2 * 3 = 6)
-                                    let resultadoProducto = numeroB * NUMEROC;
+                                    let resultadoProducto = numeroB * numeroC;
                                 </code>
                             </pre>
                             <h2 class="sub-titulos">
@@ -607,16 +673,26 @@
                                 Esta venta no es customizable y solo se utiliza para aprender lo basico de JavaScript.
                             </p>
                             <h2 class="sub-titulos">
-                                alert --> Visualiza un mensaje del usuario.
+                                alert
                             </h2>
+                            <p class="parrafos">
+                                La sentencia alert() mostrará una ventana sobre la página web que estemos accediendo
+                                mostrando el mensaje que se pase como parámetro a la llamada.
+                                En resumen sirve para visualizar un mensaje del usuario:
+                            </p>
                             <pre>
                                 <code class="language-javascript">
-                                    alert("Hola chicos bienvenidos a mi pagina!")
+                                    alert("Hola bienvenidos a JuniorBookJS!")
                                 </code>
                             </pre>
                             <h2 class="sub-titulos">
-                                prompt --> Interactua con el usuario a traves de un input.
+                                prompt
                             </h2>
+                            <p class="parrafos">
+                                La sentencia prompt() mostrará un cuadro de diálogo para que el usuario ingrese un dato.
+                                Se puede proporcionar un mensaje que se colocará sobre el campo de texto. El valor que
+                                devuelve es una cadena que representa lo que el usuario ingresó:
+                            </p>
                             <pre>
                                 <code class="language-javascript">
                                     const edadRealDelUsuario = prompt("Ingrese su edad")
@@ -624,21 +700,20 @@
                                 </code>
                             </pre>
                             <h2 class="sub-titulos">
-                                typeof --> Es un metodo que te dice cual es el tipo de dato que le pasaste.
+                                typeof
                             </h2>
+                            <p class="parrafos">
+                                Es un metodo dice cual es el tipo de dato que le pasaste:
+                            </p>
                             <pre>
                                 <code class="language-javascript">
-                                    console.log(typeof 42);
-                                    // expected output: "number"
+                                    console.log(typeof 42); // "number"
+                                    
+                                    console.log(typeof 'blubber'); // "string"
 
-                                    console.log(typeof 'blubber');
-                                    // expected output: "string"
+                                    console.log(typeof true); // boolean
 
-                                    console.log(typeof true);
-                                    // expected output: "boolean"
-
-                                    console.log(typeof undeclaredVariable);
-                                    // expected output: "undefined"
+                                    console.log(typeof undeclaredVariable); // "undefined"
                                 </code>
                             </pre>
                         </div>

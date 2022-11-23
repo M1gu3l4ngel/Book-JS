@@ -11,7 +11,7 @@ toggle.addEventListener("click", () => {
 })
 
 //searchBtn.addEventListener("click", () => {
-    //sidebar.classList.remove("close");
+//sidebar.classList.remove("close");
 //})
 
 // Codigo de AOS

@@ -194,14 +194,18 @@
 
                         <div class="cont__clase1">
                             <h2>
-                                Variables Booleanos
+                                Valores Booleanos
                             </h2>
                             <p class="parrafos">
-                                Son tipos de dato primitivo y tienen 2 posibles valores.
+                                Estos pueden tomar dos valores posibles, true o false, verdadero o falso.
+                                Así, para que nuestro programa tome un camino u otro le vamos a decir que resuelva
+                                alguna evaluación/comparación.
+                                Si es verdadera (true) tomará un camino, y si es falsa (false) tomará otro.
+
                             </p>
                             <ul class="lista">
-                                <li>Valor: Verdadero</li>
-                                <li>Valor: Falso</li>
+                                <li>true: Verdadero</li>
+                                <li>false: Falso</li>
                             </ul>
                             <pre>
                                 <code class="language-javascript">
@@ -215,7 +219,15 @@
                                     console.log(Boolean("")) // false
                                     console.log(Boolean(undefined)) // false 
                                     console.log(Boolean(null)) // false
-                                    
+
+                                    ------------------------------
+
+                                    let numero = 10;
+                                    let esMayor5 = (numero > 5); // Su valor sera true
+
+                                    if (esValida) {
+                                        alert("Es boolean true");
+                                    }
                                 </code>
                             </pre>
                         </div>
@@ -254,6 +266,17 @@
                             </p>
                             <pre>
                                 <code class="language-javascript">
+                                    let nombreIngresado = prompt("Ingresar nombre");
+                                    let apellidoIngresado = prompt("Ingresar apellido");
+
+                                    if((nombreIngresado !="") && (apellidoIngresado != "")){
+                                        alert("Nombre: "+ nombreIngresado +"\nApellido: "+apellidoIngresado); 
+                                    }else{
+                                        alert("Error: Ingresar nombre y apellido");
+                                    }
+
+                                    ------------------------------
+
                                     const token = 13109831923
                                     const user = "Miguel"
                                     const password = "contraseña123"
@@ -309,6 +332,14 @@
                             </p>
                             <pre>
                                 <code class="language-javascript">
+                                    let nombreIngresado = prompt("Ingresar nombre");
+
+                                    if ((nombreIngresado == "ANA") || (nombreIngresado == "ana")){
+                                        alert("El nombre ingresado es Ana"); 
+                                    } else{
+                                        alert("El nombre ingresado NO ES Ana"); 
+                                    }
+
                                     console.log(true || true) // true
                                     console.log(true || false) // true
                                     console.log(false || true) // true
@@ -320,7 +351,13 @@
                             </h2>
                             <pre>
                                 <code class="language-javascript">
-                                    console.log(true && false || true) // true
+                                    let nombreIngresado = prompt("Ingresar nombre");
+
+                                    if ((nombreIngresado != "") && ((nombreIngresado == "EMA") || (nombreIngresado == "ema"))) {
+                                        alert("Hola Ema");
+                                    } else {
+                                        alert("Error: Ingresar nombre valido");
+                                    }
                                 </code>
                             </pre>
                         </div>
@@ -453,9 +490,15 @@
                             <p class="parrafos">
                                 Veamos ejemplos:
                             </p>
-                            <h2 class="sub-titulos">
+                            <h2>
                                 IF:
                             </h2>
+                            <p class="parrafos">
+                                Si la condición se cumple (es decir, si su valor es true) se ejecutan todas las
+                                instrucciones que se encuentran dentro de {...}. Si la condición no se cumple (es decir,
+                                si su valor es false) no se ejecuta ninguna instrucción contenida en {...} y el programa
+                                continúa ejecutando el resto de instrucciones del script.
+                            </p>
                             <pre>
                                 <code class="language-javascript">
                                     if (edadDelUsuario >= mayoriaDeEdad || permisoDeLosPadres) {
@@ -472,11 +515,13 @@
                                     let hijoDelPrimerUser = 10
                                 </code>
                             </pre>
-                            <h2 class="sub-titulos">
+                            <h2>
                                 IF ELSE:
                             </h2>
                             <p class="parrafos">
-                                Si la evaluacion del IF da false
+                                En ocasiones, las decisiones que se deben realizar no son del tipo «si se cumple la
+                                condición, hazlo; si no se cumple, no hagas nada». Normalmente las condiciones suelen
+                                ser del tipo «si se cumple esta condición, hazlo; si no se cumple, haz esto otro».
                             </p>
                             <pre>
                                 <code class="language-javascript">
@@ -488,7 +533,7 @@
                                 </code>
                             </pre>
 
-                            <h2 class="sub-titulos">
+                            <h2>
                                 IF ELSE IF ELSE:
                             </h2>
                             <p class="parrafos">
@@ -502,6 +547,23 @@
                                         console.log("tiene permiso de los padres")
                                     } else {
                                         console.log("No tiene permiso") // No tiene permiso
+                                    }
+
+                                    ------------------------------
+
+                                    let precio = 100.5;
+
+                                    if (precio < 20) {
+                                        console.log("El precio es menor que 20");
+                                    }
+                                    else if (precio < 50) {
+                                        console.log("El precio es menor que 50");
+                                    }
+                                    else if (precio < 100) {
+                                        console.log("El precio es menor que 100");
+                                    }
+                                    else {
+                                        console.log("El precio es mayor que 100"); // El precio es mayor que 100
                                     }
                                 </code>
                             </pre>
