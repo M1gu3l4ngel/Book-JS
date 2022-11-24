@@ -54,5 +54,35 @@
 /* ====== Por debajo de 576px ====== */
 @media screen and (max-width: 576px) {
 
+    .home .titulo .contenedor__titulo .contenido__titulo h2 {
+        font-size: 2.8rem;
+    }
+
+    .home .titulo .contenedor__titulo .contenido__titulo p {
+        font-size: 0.885rem;
+    }
+
+    .home .clase1 .title__clase1 h2 {
+        font-size: 36px;
+    }
+
+    .home .clase1 .contenido__clase1 .cont__clase1 h2 {
+        font-size: 24px;
+    }
+    
+
+    header {
+        .navigation {
+            width: 365px;
+        }
+    }
+
+    footer {
+        .navigation2 {
+            width: 365px;
+        }
+    }
+
+    
     
 }

@@ -58,25 +58,7 @@
                         font-family: 'Bungee', cursive;
                     }
 
-                    .boton__caja {
-                        a {
-                            button {
-                                background-color: $sidebar-color;
-                                color: $text-color;
-                                border-style: none;
-                                border-radius: 7px;
-                                box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
-                                border: 1px $secondary-color solid;
-                                font-size: 13px;
-
-                                &:hover {
-                                    box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
-                                    background-color: $primary-color;
-                                    border: 1px $secondary-color2 solid;
-                                }
-                            }
-                        }
-                    }
+                    @include boton__caja;
                 }
             }
         }

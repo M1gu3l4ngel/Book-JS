@@ -12,27 +12,6 @@
 /* ====== Google Font Import - Poppins ====== */
 /* ====== Google Font Import - Bungee ====== */
 /* ====== Colores Principales ====== */
-/* ====== Variables para Fonts - Browser ====== */
-/* 48px */
-/*44px*/
-/*38px*/
-/*30px*/
-/*24px*/
-/*22px*/
-/*20px*/
-/*18px*/
-/*17px*/
-/*16px*/
-/*14px*/
-/* ====== Variables para Fonts - Mobile ====== */
-/*32px*/
-/*28px*/
-/*18px*/
-/*16px*/
-/*15px*/
-/*14px*/
-/*11px*/
-/*28px*/
 /* ====== Transiciones ====== */
 /* ====== Color al copiar texto en web ====== */
 ::selection {
@@ -41,7 +20,7 @@
 
 /* ====== Ancho y Alto del Scroll ====== */
 html::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
   background-color: #18191a;
   border-radius: 4px;
   box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5); }
@@ -56,37 +35,7 @@ html::-webkit-scrollbar-thumb:hover {
   background: #cab517;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); }
 
-/* ====== Underline From Left ====== */
-.hvr-underline-from-left {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden; }
-
-.hvr-underline-from-left:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 100%;
-  bottom: 0;
-  background: #f7df1e;
-  height: 2px;
-  -webkit-transition-property: right;
-  transition-property: right;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out; }
-
-.hvr-underline-from-left:hover:before,
-.hvr-underline-from-left:focus:before,
-.hvr-underline-from-left:active:before {
-  right: 0; }
-
+/* ====== Botonera de cajas / Inicio ====== */
 /* ====== Grow ====== */
 .hvr-grow {
   vertical-align: middle;
@@ -110,16 +59,13 @@ body {
   width: 100%;
   transition: all 0.3s ease; }
   body header {
-    z-index: 666;
     background-color: #18191a;
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center; }
     body header .navbar {
-      width: 1320px;
-      height: 80px;
       padding: 10px;
       margin-top: 50px;
       background-color: #242526;
@@ -344,3 +290,16 @@ footer {
 /* ====== Por debajo de 768px ====== */
 /* ====== Por encima de 768px ====== */
 /* ====== Por debajo de 576px ====== */
+@media screen and (max-width: 576px) {
+  .home .titulo .contenedor__titulo .contenido__titulo h2 {
+    font-size: 2.8rem; }
+  .home .titulo .contenedor__titulo .contenido__titulo p {
+    font-size: 0.885rem; }
+  .home .clase1 .title__clase1 h2 {
+    font-size: 36px; }
+  .home .clase1 .contenido__clase1 .cont__clase1 h2 {
+    font-size: 24px; }
+  header .navigation {
+    width: 365px; }
+  footer .navigation2 {
+    width: 365px; } }
