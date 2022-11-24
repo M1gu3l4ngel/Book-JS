@@ -1,120 +1,84 @@
 .home {
-    height: 100vh;
-    width: calc(100% - 15.625rem);
-    position: absolute;
-    top: 0;
-    left: 15.625rem;
-    background-color: $text-color;
+    height: 100%;
+    width: 100%;
+    background-color: $body-color;
     transition: $tran-05;
 
-    /* ======= Contenido de la Clase 1 ======= */
-    .clase1 {
-        background-color: $body-color;
-        width: 100%;
-
-        .title__clase1 {
-            height: 2.5rem;
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
-
-            .info__clase1 {
-                margin-right: auto;
-                margin-left: auto;
-                text-align: center;
-
-                h2 {
-                    color: $primary-color;
-                    font-size: 38px;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    font-family: 'Bungee', cursive;
-                    color: $text-color;
-                }
-            }
-        }
-
-        .contenido__clase1 {
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
+    .titulo {
+        .contenedor__titulo {
             text-align: center;
-            width: 1000px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: auto;
+            margin-left: auto;
 
-            .img-cont__clase1 {
-                margin-top: 40px;
-                margin-bottom: 50px;
-
-                img {
-                    border-radius: 7px;
-                    max-width: 100%;
-                    height: auto;
-                    width: 100%;
-                }
-            }
-
-            .separadores {
-                color: $secondary-color;
-                margin-top: 20px;
-                margin-bottom: 20px;
-            }
-
-            .cont__clase1 {
-                margin-top: 45px;
-                margin-bottom: 45px;
+            .contenido__titulo {
+                margin-top: 50px;
 
                 h2 {
                     text-transform: uppercase;
                     font-weight: 700;
-                    text-align: left;
-                    font-size: 25px;
+                    font-size: 3.5rem;
+                    color: $text-color;
                     font-family: 'Bungee', cursive;
-                    color: $primary-color;
-                    margin-top: 30px;
-                    color: $text-color;
                 }
 
-                .sub-titulos {
-                    font-size: 20px;
-                    color: $text-color;
-                }
-
-                
-
-                .parrafos {
-                    font-size: 16px;
-                    text-align: left;
-                    margin-top: 1rem;
-                    margin-bottom: 1rem;
+                p {
+                    font-size: 1.25rem;
                     color: $paragraphcolor;
                 }
             }
+        }
+    }
 
-            .lista {
-                text-align: left;
-                line-height: 30px;
-                color: $paragraphcolor;
+    .tema {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+
+        .caja {
+
+            .card__caja {
+                height: 150px;
+                background-color: $sidebar-color;
+                box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 7px;
+
+                .info__caja {
+                    word-wrap: break-word;
+                    text-align: center;
+
+                    h2 {
+                        font-size: 22px;
+                        color: $text-color;
+                        margin-bottom: 20px;
+                        font-family: 'Bungee', cursive;
+                    }
+
+                    .boton__caja {
+                        a {
+                            button {
+                                background-color: $sidebar-color;
+                                color: $text-color;
+                                border-style: none;
+                                border-radius: 7px;
+                                box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+                                border: 1px $secondary-color solid;
+                                font-size: 13px;
+
+                                &:hover {
+                                    box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+                                    background-color: $primary-color;
+                                    border: 1px $secondary-color2 solid;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
-
-    :not(pre)>code[class*=language-],
-    pre[class*=language-] {
-        background-color: $sidebar-color;
-    }
-
-    .alerta-container {
-        display: flex;
-        align-items: center;
-        background-color: $secondary-color;
-
-        i {
-            margin-right: 8px;
-        }
-    }
-}
-
-/* Siempre debe ir de ultimo */
-.sidebar.close~.home {
-    left: 5rem;
-    height: 100vh;
-    width: calc(100% - 5rem);
 }

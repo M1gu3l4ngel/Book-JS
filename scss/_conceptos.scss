@@ -1,0 +1,119 @@
+.home {
+    height: 100%;
+    width: 100%;
+    background-color: $body-color;
+    transition: $tran-05;
+
+    /* ======= Contenido de la Clase 1 ======= */
+    .clase1 {
+        background-color: $body-color;
+        width: 100%;
+        margin-top: 45px;
+
+        .title__clase1 {
+            text-align: center;
+            margin-bottom: 40px;
+
+            h2 {
+                color: $primary-color;
+                font-size: 44px;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-family: 'Bungee', cursive;
+                color: $text-color;
+            }
+        }
+
+        .contenido__clase1 {
+            text-align: center;
+
+            .img-cont__clase1 {
+                margin-bottom: 50px;
+
+                img {
+                    border-radius: 7px;
+                    max-width: 100%;
+                    height: auto;
+                    width: 650px;
+                }
+            }
+
+            .separadores {
+                color: $secondary-color;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .cont__clase1 {
+                margin-top: 45px;
+                margin-bottom: 45px;
+
+                h2 {
+                    text-align: left;
+                    font-size: 25px;
+                    font-family: 'Bungee', cursive;
+                    color: $primary-color;
+                    margin-top: 30px;
+                    color: $text-color;
+                }
+
+                .sub-titulos {
+                    font-size: 20px;
+                    color: $text-color;
+                }
+
+                .parrafos {
+                    font-size: 16px;
+                    text-align: left;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    color: $paragraphcolor;
+                }
+
+                pre {
+                    box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+                }
+            }
+
+            .lista {
+                text-align: left;
+                line-height: 30px;
+                color: $paragraphcolor;
+            }
+        }
+
+        .botones__cambio {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 7px;
+
+            .boton__caja {
+                a {
+                    button {
+                        background-color: $sidebar-color;
+                        color: $text-color;
+                        border-style: none;
+                        border-radius: 7px;
+                        box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+                        border: 1px $secondary-color solid;
+                        font-size: 13px;
+
+                        &:hover {
+                            box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+                            background-color: $primary-color;
+                            border: 1px $secondary-color2 solid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    :not(pre)>code[class*=language-],
+    pre[class*=language-] {
+        background-color: $sidebar-color;
+    }
+}

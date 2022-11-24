@@ -1,63 +1,66 @@
-/* ====== Contenedor del Footer ====== */
-.footer {
-    text-align: center;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+footer {
+    z-index: 666;
     background-color: $body-color;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    .col1__footer {
-        p {
-            margin-top: 0.5rem;
-            margin-bottom: 0.5rem;
+    .navbar {
+        width: 1320px;
+        height: 80px;
+        padding: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: $sidebar-color;
+        border-radius: 7px;
+        box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo__footer {
+        img {
+            width: 45px;
+            border-radius: 7px;
+        }
+    }
+
+    .titulo__footer {
+        width: auto;
+        height: auto;
+
+        h2 {
             color: $text-color;
-            font-size: $parrafos16;
+            font-size: 16px;
+            margin: 0;
         }
     }
 
-    .col2__footer {
+    .redes__footer {
 
-        ul {
-            padding-left: 0;
-            list-style: none;
-            margin-top: 0.5rem;
-            margin-bottom: 0.5rem;
+        .facebook {
+            color: #0165E1;
+        }
 
-            .item__footer {
-                margin-right: 24px;
-                display: inline-block;
+        .discord {
+            color: #7289DA;
+        }
 
-                a {
-                    i {
-                        font-size: 20px;
-                        color: $secondary-color;
+        a {
+            padding-top: 15px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
 
-                        &:hover {
-                            color: $secondary-color2;
-                        }
-                    }
-                }
+            &:hover {
+                border: 1px $secondary-color solid;
+                border-radius: 7px;
+                background-color: $primary-color;
             }
-        }
-    }
 
-    .col3__footer {
-        ul {
-            padding-left: 0;
-            list-style: none;
-            margin-top: 0.5rem;
-            margin-bottom: 0.5rem;
-
-            li {
-                display: inline-block;
-                margin-right: 5px;
-
-                a {
-                    color: $text-color;
-
-                    &:hover {
-                        color: $paragraphcolor;
-                    }
-                }
+            i {
+                font-size: 30px;
+                color: $text-color;
             }
         }
     }

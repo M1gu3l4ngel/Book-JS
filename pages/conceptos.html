@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/js.png" />
+    <!-- Descripcion del sitio -->
+    <meta name="">
+    <!-- Palabras clave -->
+    <meta name="keywords" content="">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Titulo Web -->
+    <title>Conceptos Generales - JavaScript</title>
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../css/prism.css" />
+    <!-- Iconos FontAwesome -->
+    <script src="https://kit.fontawesome.com/5de37ddf45.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <main class="home">
+        <!-- ======= Comienzo del Header ======= -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand logo__header hvr-grow" href="../index.html">
+                        <img src="../assets/img/js.png" alt="Logo de Junior School JS">
+                    </a>
+                    <div class="redes__header">
+                        <a href="#"><i class="fa-brands fa-html5 html"></i></a>
+                        <a href="#"><i class="fa-brands fa-css3-alt css"></i></a>
+                        <a href="#"><i class="fa-brands fa-react react"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ====== Comienzo del Contenido ====== -->
+        <div class="container-fluid clase1">
+            <div class="container title__clase1">
+                <h2 id="acerca">
+                    Conceptos Generales
+                </h2>
+            </div>
+
+            <div class="container contenido__clase1">
+                <div class="row">
+                    <div class="col">
+                        <div class="img-cont__clase1">
+                            <img class="fit-cover" src="../assets/img/clase1.PNG" alt="Imagen Conceptos de la Clase">
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Tengamos en cuenta que:
+                            </h2>
+                            <ul class="lista">
+                                <li>Eliminar siempre los console.log para entregar un proyecto.</li>
+                                <li>Script: Son ordenes o instrucciones que serán ejecutadas por el navegador.</li>
+                                <li>Sentencia: Es una serie de instrucciones.</li>
+                                <li>No se define el tipo de variables</li>
+                                <li>Javascript tiene tipado debil</li>
+                                <li>Las variables no precisan que se le asignen un tipo especifico de dato</li>
+                                <li>Hay 2 formas de declarar variables, no hay que declarar el tipado</li>
+                                <li>En JavaScript no es necesario el uso de punto y coma</li>
+                                <li>En JavaScript tampoco se usan las eñes</li>
+                            </ul>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Console.log
+                            </h2>
+                            <p class="parrafos">
+                                Console.log es un método que me va a
+                                permitir visualizar en consola un mensaje, este mensaje puede ser tanto una cadena de
+                                texto, como también cualquier tipo de dato, etc...
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                console.log("Asi se codea!!")
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Sintaxis
+                            </h2>
+                            <p class="parrafos">
+                                Son reglas que se establecen a la hora de generar
+                                instrucciones, en JavaScript no se tienen en cuenta los espacios o los saltos de línea.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                   [asasdasd] ---&gt; [ asasdasd ]
+                                {
+                                asdasdasda: asdasdas
+                                }
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Como tambien identacion o sangria.
+                            </p>
+                            <h2>
+                                Palabras Reservadas
+                            </h2>
+                            <p class="parrafos">
+                                Son aquellas que se utilizan para construir las sentencias de JavaScript y que por tanto
+                                no pueden ser utilizadas libremente.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    break, case, continue, default, let
+                                    delete, do, else, for, function, if, in, instanceof, new, return, 
+                                    switch, this, throw, try, typeof, var, void, while, with, y varias más
+
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Método camelCase
+                            </h2>
+                            <p class="parrafos">
+                                Se hace el uso de mayuscula en la primera letra que deviene de una palabra anterior,
+                                la primera palabra siempre va a estar en minuscula, las consecuentes, solamente
+                                las mayusculas en la primera letra.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                 verificarUsuario
+                                const carritoDeCompras = true
+                                const emailUsuario = true
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Comentarios
+                            </h2>
+                            <p class="parrafos">
+                                Se pueden incluir comentarios en el codigo de Javascript, existen 2 formas de colocar
+                                comentarios:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                // Esto es un comentario de linea.
+                                /* Esto es un comentario de bloque */
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Case Sensitive
+                            </h2>
+                            <p class="parrafos">
+                                JavaScript es case-sensitive osea quiere decir que es sencible a las mayusculas
+                                de minusculas. Veamos un ejemplo:
+                            </p>
+                            <ul class="lista">
+                                <li>PERRO</li>
+                                <li>perro</li>
+                                <li>Perro</li>
+                                <li>PerRo</li>
+                                <li>PERro</li>
+                            </ul>
+                            <p class="parrafos">
+                                Todo esto es diferente para JavaScript.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                const PerRo = no usar!!!
+                                const perro = correcto
+                                const perroBonito = correcto ===> case-sensitive
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Variables
+                            </h2>
+                            <p class="parrafos">
+                                Una variable es un espacio reservado en la memoria que, como su nombre indica, puede
+                                cambiar de contenido a lo largo de la ejecución de un programa.
+                                En las variables almacenamos diversos tipos de datos que utilizamos en la aplicación.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                        //Declaración de variable ES5. 
+                                        var nombre = “John”; // DEPRECADO!!!
+
+                                        //Declaración de variable ES6.
+                                        let apellido = “Doe”;
+                                        const curso = "JavaScript";
+                                </code>
+                            </pre>
+                            <h2>
+                                Declaracion de Variables
+                            </h2>
+                            <p class="parrafos">
+                                Declarar una variable significa crearla. Para esto usamos la palabra reservada let o
+                                const. Escribimos una de estas palabras claves seguido del nombre de nuestra variable.
+                                Para los nombres no debemos utilizar ni espacios ni caracteres especiales.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    // Correcto
+                                    let apellido
+                                    let telefono
+                                    const anioNacimiento
+                                    
+                                    // Incorrecto
+                                    var año // DEPRECADO Y USA EÑE!!!
+                                    var teléfono móvil // DEPRECADO Y USA ACENTOS!!!
+                                </code>
+                            </pre>
+                            <h2>
+                                Asignacion de Valores
+                            </h2>
+                            <p class="parrafos">
+                                En una variable podemos asignar distintos tipos de valores mediante el operador de
+                                asignación, que es el símbolo de igualdad (=).
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    // Declaración de Variables
+                                    let edad
+                                    let nombre
+                                    let apellido
+
+                                    // Asignación de Valores
+                                    edad = 5
+                                    nombre = "John R."
+                                    apellido = 'Doe'
+                                </code>
+                            </pre>
+                            <h2>
+                                Inicializar Variables
+                            </h2>
+                            <p class="parrafos">
+                                Podemos declarar una variable y asignarle un valor inicial en el mismo proceso:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    // Variables Inicializadas
+                                    let edad = 5 
+                                    const nombre = "John R."
+                                    const apellido = 'Doe'
+
+                                </code>
+                            </pre>
+
+
+
+                            <h2>
+                                Variable - (Const)
+                            </h2>
+                            <p class="parrafos">
+                                Una constante const recibe una única asignación al momento de su declaración, impidiendo
+                                que su valor se modifique luego.
+                            </p>
+                            <ul class="lista">
+                                <li>
+                                    const: Es una declaracion de variable que va a generar que el valor al cual se
+                                    asigna sea constante.
+                                </li>
+                                <li>
+                                    gustoFavoritoDeFernando: Es el (identificador) y es aquello que le va a dar nombre a
+                                    ese elemento que esta guardando, necesario a la hora de declarar variables.
+                                </li>
+                                <li>
+                                    "Menta": Es un (valor) o un (dato) de ese elemento que estamos guardando.
+                                </li>
+                            </ul>
+                            <pre>
+                                <code class="language-javascript">
+                                const gustoFavoritoDeFernando = "Menta"
+                                console.log(gustoFavoritoDeFernando) // Menta
+
+                                const nombre = "Carolina"
+                                console.log(nombre) // Carolina
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Intentar reasignar una variable en JavaScript, que sea tipo const, nos dara error.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    gustoFavoritoDeFernando = "Chocolate Suizo"
+                                    console.log(gustoFavoritoDeFernando) // error
+                                </code>
+                            </pre>
+
+
+
+                            <h2>
+                                Variable - (Let)
+                            </h2>
+                            <p class="parrafos">
+                                Una variable let puede recibir múltiples asignaciones en el transcurso de la aplicación,
+                                es decir que puede cambiar de valor varias veces.
+                            </p>
+                            <ul class="lista">
+                                <li>
+                                    let: Es una forma de declaracion de variable que permite la reasignacion del valor.
+                                </li>
+                                <li>
+                                    Declara una variable local en un bloque de ambito, inicializandola opcionalmente a
+                                    un valor. Y podras cambiar su valor luego.
+                                </li>
+                            </ul>
+                            <pre>
+                                <code class="language-javascript">
+                                    //Declarando la variable
+                                    let edad = 25
+                                    console.log(edad) // 25
+
+                                    
+                                </code>
+                            </pre>
+
+                            <p class="parrafos">
+                                Intentar reasignar una variable en JavaScript, que sea tipo let, nos cambiara su valor
+                                inicial.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    // Reasignando el valor de la variable
+                                    edad = 29
+                                    console.log(edad) // 29
+                                </code>
+                            </pre>
+
+                            <h2>
+                                Variable - (Var)
+                            </h2>
+                            <p class="parrafos">
+                                No se usa el var para asignar variables <span
+                                    class="badge text-bg-danger badgedit">Deprecado</span>.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                   var = email = miguel@gmail.com // DEPRECADO!!
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Datos Primitivos
+                            </h2>
+                            <p class="parrafos">
+                                Los datos primitivos son tipos de datos que no precisan instrucciones
+                                para manipular valores
+                            </p>
+
+                            <h2>
+                                String:
+                            </h2>
+                            <p class="parrafos">
+                                Son cadenas de caracteres y es el uso de comillas "", '', ``. Si intentas escribir texto
+                                sin comillas, JavaScript interpreta que estas escribiendo el identificador de una
+                                variable.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const segundoNombre = "Angel"
+                                    console.log(segundoNombre) // Angel
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Por ejemplo:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                "Carola"
+                                `Miguel`
+                                'Angel'
+                                </code>
+                            </pre>
+                        </div>
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Number:
+                            </h2>
+                            <p class="parrafos">
+                                Todos los numeros se pueden asignar a una variable, en JavaScript los numeros con coma
+                                se llaman numeros flotantes.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const numeroFavorito = 20554154
+                                    const numeroConComa = 2.151515 // Asi se representan numeros con coma.
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Por ejemplo:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                2022
+                                1.52
+                                25468
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Operadores Aritmeticos
+                            </h2>
+                            <p class="parrafos">
+                                Con variables de valores numéricos podes realizar operaciones matemáticas: sumas,
+                                restas, multiplicaciones, etc.
+                            </p>
+                            <pre class="codigo">
+                                <code class="language-javascript">
+                                    let numeroA = 1;
+                                    let numeroB = 2;
+                                    const numeroC = 3;
+
+                                    //Suma de dos números (1 + 2 = 3)
+                                    let resultadoSuma = numeroA + numeroB;
+
+                                    //Resta de dos números (2 - 1 = 1)
+                                    let resultadoResta = numeroB - numeroA;
+
+                                    //Producto de dos números (2 * 3 = 6)
+                                    let resultadoProducto = numeroB * numeroC;
+                                </code>
+                            </pre>
+                            <h2 class="sub-titulos">
+                                Suma:
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                console.log(1 + 1) // 2
+                                </code>
+                            </pre>
+                            <h2 class="sub-titulos">
+                                Resta:
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                console.log(10 - 5) // 5
+                                </code>
+                            </pre>
+                            <h2 class="sub-titulos">
+                                Multiplicacion:
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                console.log(5 * 10) // 50
+                                </code>
+                            </pre>
+                            <h2 class="sub-titulos">
+                                Division:
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                console.log(10 / 2) // 5
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                CONCATENAR
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                const usuario1 = "Agustin"
+                                const usuario2 = "Andres"
+                                const usuario3 = "Joaquin"
+
+                                console.log(usuario1 + ", " + usuario2 + " y " + usuario3) // Agustin, Andres y Joaquin
+                                </code>
+                            </pre>
+
+                            <h2>
+                                Prioridad
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                console.log(2 * 4 + 5)
+                                const suma = 2 * 5 + 10 // Sin console.log no se podria ver el resultado que es 20.
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Cuadros de Dialogo
+                            </h2>
+                            <p class="parrafos">
+                                Es una ventana emergente la cual interactua el usuario, es nativa del navegador.
+                                Esta venta no es customizable y solo se utiliza para aprender lo basico de JavaScript.
+                            </p>
+                            <h2 class="sub-titulos">
+                                alert
+                            </h2>
+                            <p class="parrafos">
+                                La sentencia alert() mostrará una ventana sobre la página web que estemos accediendo
+                                mostrando el mensaje que se pase como parámetro a la llamada.
+                                En resumen sirve para visualizar un mensaje del usuario:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    alert("Hola bienvenidos a JuniorBookJS!")
+                                </code>
+                            </pre>
+                            <h2 class="sub-titulos">
+                                prompt
+                            </h2>
+                            <p class="parrafos">
+                                La sentencia prompt() mostrará un cuadro de diálogo para que el usuario ingrese un dato.
+                                Se puede proporcionar un mensaje que se colocará sobre el campo de texto. El valor que
+                                devuelve es una cadena que representa lo que el usuario ingresó:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const edadRealDelUsuario = prompt("Ingrese su edad")
+                                    console.log(`Usted tiene: ${edadRealDelUsuario}`)
+                                </code>
+                            </pre>
+                            <h2 class="sub-titulos">
+                                typeof
+                            </h2>
+                            <p class="parrafos">
+                                Es un metodo dice cual es el tipo de dato que le pasaste:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    console.log(typeof 42); // "number"
+                                    
+                                    console.log(typeof 'blubber'); // "string"
+
+                                    console.log(typeof true); // boolean
+
+                                    console.log(typeof undeclaredVariable); // "undefined"
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="botones__cambio" style="margin-top: 10px;">
+                            <div class="btn-group boton__caja" role="group">
+                                <a href="../index.html">
+                                    <button class="btn btn-primary" type="button" style="margin-right: 15px;">
+                                        <i class="fa-solid fa-house" style="margin-right: 10px;"></i>
+                                        Inicio
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="btn-group boton__caja" role="group">
+                                <a href="./flujos.html">
+                                    <button class="btn btn-primary" type="button" style="margin-left: 15px;">
+                                        Siguiente tema <i class="fa-solid fa-arrow-right"
+                                            style="margin-left: 10px;"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== Contenedor del Footer ====== -->
+        <footer>
+            <div class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand logo__footer hvr-grow" href="../index.html">
+                        <img src="../assets/img/js.png" alt="Logo de Junior School JS">
+                    </a>
+                    <div class="titulo__footer">
+                        <h2>
+                            Sitio creado con &#x2764;&#xfe0f; por Miguel Serrao.
+                        </h2>
+                    </div>
+                    <div class="redes__footer">
+                        <a href="#"><i class="fa-brands fa-facebook facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord discord"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- ====== Script de Bootstrap ====== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+    <!-- ====== Script de AOS ====== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ====== Script de mi Codigo ====== -->
+    <script src="../js/main.js"></script>
+    <!-- ====== Script de mi Codigo ====== -->
+    <script src="../js/prism.js"></script>
+</body>
+
+</html>
