@@ -22,13 +22,13 @@
 html::-webkit-scrollbar {
   width: 8px;
   background-color: #18191a;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5); }
 
 /* ====== Ponemos un color de fondo y redondeamos las esquinas del thumb ====== */
 html::-webkit-scrollbar-thumb {
   background: #f7df1e;
-  border-radius: 4px; }
+  border-radius: 0.25rem; }
 
 /* ====== Cambiamos el fondo y agregamos una sombra cuando esté en hover ====== */
 html::-webkit-scrollbar-thumb:hover {
@@ -66,20 +66,20 @@ body {
     align-items: center;
     justify-content: center; }
     body header .navbar {
-      padding: 10px;
-      margin-top: 50px;
+      padding: 0.625rem;
+      margin-top: 3.125rem;
       background-color: #242526;
-      border-radius: 7px;
+      border-radius: 0.4375rem;
       box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5); }
     body header .logo__header img {
-      width: 45px;
-      border-radius: 7px; }
+      width: 2.8125rem;
+      border-radius: 0.4375rem; }
     body header .titulo__footer {
       width: auto;
       height: auto; }
       body header .titulo__footer h2 {
         color: #ccc;
-        font-size: 16px;
+        font-size: 1rem;
         margin: 0; }
     body header .redes__header .html {
       color: #f06529; }
@@ -88,16 +88,16 @@ body {
     body header .redes__header .react {
       color: #61DBFB; }
     body header .redes__header a {
-      padding-top: 15px;
-      padding-bottom: 5px;
-      padding-left: 10px;
-      padding-right: 10px; }
+      padding-top: 0.9375rem;
+      padding-bottom: 0.3125rem;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; }
       body header .redes__header a:hover {
         border: 1px #f7df1e solid;
-        border-radius: 7px;
+        border-radius: 0.4375rem;
         background-color: #3a3b3c; }
       body header .redes__header a i {
-        font-size: 30px;
+        font-size: 1.875rem;
         color: #ccc; }
 
 .home {
@@ -113,7 +113,7 @@ body {
     margin-right: auto;
     margin-left: auto; }
     .home .titulo .contenedor__titulo .contenido__titulo {
-      margin-top: 50px; }
+      margin-top: 3.125rem; }
       .home .titulo .contenedor__titulo .contenido__titulo h2 {
         text-transform: uppercase;
         font-weight: 700;
@@ -133,23 +133,23 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 7px; }
+      border-radius: 0.4375rem; }
       .home .tema .caja .card__caja .info__caja {
         word-wrap: break-word;
         text-align: center; }
         .home .tema .caja .card__caja .info__caja h2 {
-          font-size: 22px;
+          font-size: 1.375rem;
           color: #ccc;
-          margin-bottom: 20px;
+          margin-bottom: 1.25rem;
           font-family: 'Bungee', cursive; }
         .home .tema .caja .card__caja .info__caja .boton__caja a button {
           background-color: #242526;
           color: #ccc;
           border-style: none;
-          border-radius: 7px;
+          border-radius: 0.4375rem;
           box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
           border: 1px #f7df1e solid;
-          font-size: 13px; }
+          font-size: 0.8125rem; }
           .home .tema .caja .card__caja .info__caja .boton__caja a button:hover {
             box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
             background-color: #3a3b3c;
@@ -164,13 +164,13 @@ body {
   .home .clase1 {
     background-color: #18191a;
     width: 100%;
-    margin-top: 45px; }
+    margin-top: 2.8125rem; }
     .home .clase1 .title__clase1 {
       text-align: center;
-      margin-bottom: 40px; }
+      margin-bottom: 2.5rem; }
       .home .clase1 .title__clase1 h2 {
         color: #3a3b3c;
-        font-size: 44px;
+        font-size: 2.75rem;
         font-weight: bold;
         text-transform: uppercase;
         font-family: 'Bungee', cursive;
@@ -178,31 +178,31 @@ body {
     .home .clase1 .contenido__clase1 {
       text-align: center; }
       .home .clase1 .contenido__clase1 .img-cont__clase1 {
-        margin-bottom: 50px; }
+        margin-bottom: 3.125rem; }
         .home .clase1 .contenido__clase1 .img-cont__clase1 img {
-          border-radius: 7px;
+          border-radius: 0.4375rem;
           max-width: 100%;
           height: auto;
-          width: 650px; }
+          width: 40.625rem; }
       .home .clase1 .contenido__clase1 .separadores {
         color: #f7df1e;
-        margin-top: 20px;
-        margin-bottom: 20px; }
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem; }
       .home .clase1 .contenido__clase1 .cont__clase1 {
-        margin-top: 45px;
-        margin-bottom: 45px; }
+        margin-top: 2.8125rem;
+        margin-bottom: 2.8125rem; }
         .home .clase1 .contenido__clase1 .cont__clase1 h2 {
           text-align: left;
-          font-size: 25px;
+          font-size: 1.5625rem;
           font-family: 'Bungee', cursive;
           color: #3a3b3c;
-          margin-top: 30px;
+          margin-top: 1.875rem;
           color: #ccc; }
         .home .clase1 .contenido__clase1 .cont__clase1 .sub-titulos {
-          font-size: 20px;
+          font-size: 1.25rem;
           color: #ccc; }
         .home .clase1 .contenido__clase1 .cont__clase1 .parrafos {
-          font-size: 16px;
+          font-size: 1rem;
           text-align: left;
           margin-top: 1rem;
           margin-bottom: 1rem;
@@ -211,7 +211,7 @@ body {
           box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5); }
       .home .clase1 .contenido__clase1 .lista {
         text-align: left;
-        line-height: 30px;
+        line-height: 1.875rem;
         color: #9b9d9e; }
     .home .clase1 .botones__cambio {
       width: 100%;
@@ -219,15 +219,15 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-radius: 7px; }
+      border-radius: 0.4375rem; }
       .home .clase1 .botones__cambio .boton__caja a button {
         background-color: #242526;
         color: #ccc;
         border-style: none;
-        border-radius: 7px;
+        border-radius: 0.4375rem;
         box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
         border: 1px #f7df1e solid;
-        font-size: 13px; }
+        font-size: 0.8125rem; }
         .home .clase1 .botones__cambio .boton__caja a button:hover {
           box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
           background-color: #3a3b3c;
@@ -245,39 +245,39 @@ footer {
   align-items: center;
   justify-content: center; }
   footer .navbar {
-    width: 1320px;
-    height: 80px;
-    padding: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    width: 82.5rem;
+    height: 5rem;
+    padding: 0.625rem;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
     background-color: #242526;
-    border-radius: 7px;
+    border-radius: 0.4375rem;
     box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5); }
   footer .logo__footer img {
-    width: 45px;
-    border-radius: 7px; }
+    width: 2.8125rem;
+    border-radius: 0.4375rem; }
   footer .titulo__footer {
     width: auto;
     height: auto; }
     footer .titulo__footer h2 {
       color: #ccc;
-      font-size: 16px;
+      font-size: 1rem;
       margin: 0; }
   footer .redes__footer .facebook {
     color: #0165E1; }
   footer .redes__footer .discord {
     color: #7289DA; }
   footer .redes__footer a {
-    padding-top: 15px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px; }
+    padding-top: 0.9375rem;
+    padding-bottom: 0.3125rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem; }
     footer .redes__footer a:hover {
       border: 1px #f7df1e solid;
-      border-radius: 7px;
+      border-radius: 0.4375rem;
       background-color: #3a3b3c; }
     footer .redes__footer a i {
-      font-size: 30px;
+      font-size: 1.875rem;
       color: #ccc; }
 
 /* ====== Por debajo de 1400px ====== */
@@ -296,10 +296,10 @@ footer {
   .home .titulo .contenedor__titulo .contenido__titulo p {
     font-size: 0.885rem; }
   .home .clase1 .title__clase1 h2 {
-    font-size: 36px; }
+    font-size: 2.25rem; }
   .home .clase1 .contenido__clase1 .cont__clase1 h2 {
-    font-size: 24px; }
+    font-size: 1.5rem; }
   header .navigation {
-    width: 365px; }
+    width: 22.8125rem; }
   footer .navigation2 {
-    width: 365px; } }
+    width: 22.8125rem; } }

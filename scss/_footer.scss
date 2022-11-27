@@ -8,20 +8,20 @@ footer {
     justify-content: center;
 
     .navbar {
-        width: 1320px;
-        height: 80px;
-        padding: 10px;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        width: 82.5rem;
+        height: 5rem;
+        padding: 0.625rem;
+        margin-top: 3.125rem;
+        margin-bottom: 3.125rem;
         background-color: $sidebar-color;
-        border-radius: 7px;
+        border-radius: 0.4375rem;
         box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
     }
 
     .logo__footer {
         img {
-            width: 45px;
-            border-radius: 7px;
+            width: 2.8125rem;
+            border-radius: 0.4375rem;
         }
     }
 
@@ -31,7 +31,7 @@ footer {
 
         h2 {
             color: $text-color;
-            font-size: 16px;
+            font-size: 1rem;
             margin: 0;
         }
     }
@@ -47,19 +47,19 @@ footer {
         }
 
         a {
-            padding-top: 15px;
-            padding-bottom: 5px;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-top: 0.9375rem;
+            padding-bottom: 0.3125rem;
+            padding-left: 0.625rem;
+            padding-right: 0.625rem;
 
             &:hover {
                 border: 1px $secondary-color solid;
-                border-radius: 7px;
+                border-radius: 0.4375rem;
                 background-color: $primary-color;
             }
 
             i {
-                font-size: 30px;
+                font-size: 1.875rem;
                 color: $text-color;
             }
         }

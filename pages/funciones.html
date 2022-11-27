@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/js.png" />
+    <!-- Descripcion del sitio -->
+    <meta name="description" content="">
+    <!-- Palabras clave -->
+    <meta name="keywords" content="">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Titulo Web -->
+    <title>Funciones - JavaScript</title>
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../css/prism.css" />
+    <!-- Iconos FontAwesome -->
+    <script src="https://kit.fontawesome.com/5de37ddf45.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="home">
+        <!-- ======= Comienzo del Header ======= -->
+        <header>
+            <nav class="container navbar navbar-expand-lg navigation">
+                <div class="container">
+                    <a class="navbar-brand logo__header hvr-grow" href="../index.html">
+                        <img src="../assets/img/js.png" alt="Logo de Junior School JS">
+                    </a>
+                    <div class="redes__header">
+                        <a href="#"><i class="fa-brands fa-html5 html"></i></a>
+                        <a href="#"><i class="fa-brands fa-css3-alt css"></i></a>
+                        <a href="#"><i class="fa-brands fa-react react"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- ====== Comienzo del Contenido ====== -->
+        <div class="container-fluid clase1">
+            <div class="container title__clase1">
+                <div class="row">
+                    <div class="info__clase1">
+                        <h2 id="acerca">
+                            Funciones
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container contenido__clase1">
+                <div class="row">
+                    <div class="col">
+                        <div class="img-cont__clase1">
+                            <img class="fit-cover" src="../assets/img/clase4.PNG" alt="Imagen Conceptos de la Clase">
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Funciones
+                            </h2>
+                            <p class="parrafos">
+                                Metodos que permiten evitar la repetición de codigo, ejecutar instrucciones y/o
+                                sentencias. Cuando se desarrolla una aplicación o sitio web, es muy habitual utilizar
+                                una y otra vez
+                                las mismas instrucciones.
+                                <br>
+                                <br>
+                                En programación, una función es un conjunto de instrucciones que se agrupan para
+                                realizar una tarea concreta, que luego se puede reutilizar a lo largo de diferentes
+                                instancias del código.
+
+                            </p>
+                            <h2>
+                                Declaracion de Funciones
+                            </h2>
+                            <p class="parrafos">
+                                Se declara a través de la palabra reservada function. Deben tener un nombre en minúscula
+                                y sin espacios seguidos de los característicos paréntesis (). El contenido de la función
+                                se escribe entre las llaves. El nombre de la función no se puede repetir en otra
+                                funcion.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    function saludar () {
+                                        console.log("Hola, bienvenido a mi pagina web!")
+                                    }
+                                </code>
+                            </pre>
+                            <h2>
+                                Llamado a la funcion
+                            </h2>
+                            <p class="parrafos">
+                                Se debe llamar a la funcion para poder ejecutar a las sentencias que contiene.
+                                <br>
+                                Una vez que declaramos la función, podemos usarla en cualquier otra parte del código
+                                todas las veces que queramos.
+                                Para ejecutar una función sólo hay que escribir su nombre y finalizar la sentencia con
+                                (). A esto se lo conoce como llamado a la función.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    saludar()
+                                </code>
+                            </pre>
+                            <h2>
+                                Parametros
+                            </h2>
+                            <p class="parrafos">
+                                Los parámetros son variables que se declaran dentro de la función, entre sus paréntesis.
+                                Los valores de éstos se definen luego en el llamado.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    function conParametros(parametro1, parametro2) {
+                                        console.log(parametro1 + " " + parametro2);
+                                    }                                    
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Así, podemos armar funciones dinámicas que, siguiendo la lógica que queramos, pueden
+                                generar distintos resultados al recibir diferentes valores.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    function saludarALosUsuarios (nombre) {
+                                        console.log(`Hola ${nombre}`)
+                                    }
+
+                                    saludarALosUsuarios("Franco")
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Llamado de una funcion que tiene parametros precisa en la ejecucion que se le pasen
+                                argumentos, para remplazar a esos parametros por los valores.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    saludarALosUsuarios("Alvaro")
+                                    saludarALosUsuarios("Bauti")
+                                    const profe = "Carola"
+                                    saludarALosUsuarios(profe)
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Veamos otro ejemplo, usaremos un prompt y le pasamos a una funcion ese valor.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const nombreDelUsuario = prompt("Ingrese su nombre")
+
+                                    saludarALosUsuarios(nombreDelUsuario)
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Las funciones por defecto tienen un valor
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    function suma (a, b) {
+                                        return a + b
+                                    }
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Recordar que en la llamada, los argumentos se separan con coma
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    suma(5, 6)
+                                    const sumaDeDosOperandos = suma(10, 96)
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Veamos un ejemplo mas complejo:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    function multiplicarLoSumado ( multiplicador, unValor ) {
+                                        return multiplicador * unValor
+                                    }
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                A las funciones se le pueden pasar todo tipo de datos:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    console.log(multiplicarLoSumado(5, 1000))
+                                    console.log(multiplicarLoSumado(9, sumaDeDosOperandos ))
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Debemos tomar en cuenta varias cosas del return:
+                            </p>
+                            <ul class="lista">
+                                <li>return es exclusivo de la funciones</li>
+                                <li>No se puede utilizar dentro de un if</li>
+                                <li>No se puede utilizar dentro de un for</li>
+                                <li>Si un if o un for están dentro de una funcion, puede usarse el return</li>
+                            </ul>
+                            <h2>
+                                Tablas de multiplicar con una funcion
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                    function tablaDeMultiplicar ( numero ) {
+
+                                        for (let i = 0; i <= 10; i++ ){
+                                            console.log(`${numero} x ${i} = ${ numero * i} `)
+                                        }
+                                    }
+
+                                    tablaDeMultiplicar(7)
+                                    tablaDeMultiplicar(1000)
+                                    tablaDeMultiplicar(1232109832)
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Funciones Anonimas
+                            </h2>
+                            <p class="parrafos">
+                                Son funciones que se encuentran ligadas a una variable, son anonimas porque no cuentan
+                                con un identificador propio, se identifican es con el identificador de la variable.
+                            </p>
+                            <p class="parrafos">
+                                No se pueden ejecutar antes de su inicializacion. Por ejemplo cosas que no podemos hacer
+                                con funciones anonimas:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    console.log(multiplicar(2,8)) // NO se puede hacer con funciones anonimas.
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Veamos un ejemplo de funciones anonimas:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const multiplicar = function (a, b) {
+                                        return a * b
+                                    }
+
+                                    console.log(multiplicar(5, 6))
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Funciones de Flecha - Arrow Function
+                            </h2>
+                            <p class="parrafos">
+                                Identificamos a las funciones flechas como funciones anónimas de sintaxis simplificada.
+                                Están disponibles desde la versión ES6 de JavaScript, no usan la palabra function pero
+                                usa => (flecha) entre los parámetros y el bloque.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                const dividir = () => {
+                                    return 5/5
+                                }
+
+                                console.log(dividir())
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Un solo parametro puede ir o no con parentesis
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const dividirOtroNumero = numero => {
+                                        return numero / 5
+                                    }
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Uso de mas de un parametro
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const dividirDosNumero = ( a, b ) => {
+                                        return a / b
+                                    } 
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Retorno Implicito
+                            </h2>
+                            <p class="parrafos">
+                                No se puede hacer uso de este recurso, si tenemos mas de una instruccion
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const retornoImplicito = (a , b) => a / b
+
+                                    console.log(retornoImplicito(10, 10))
+                                </code>
+                            </pre>
+
+                            <hr class="separadores">
+
+                            <div class="cont__clase1">
+                                <h2>
+                                    Estructura if dentro de una funcion
+                                </h2>
+                                <pre>
+                                    <code class="language-javascript">
+                                        const comprobarSiPuedeAccederAlCine = ( edad, permisoPadres) => {
+
+                                            if( edad >= 18 ){
+                                                return "puede acceder al cine"
+                                            } else if (permisoPadres === true) {
+                                                return "Tiene permiso de los padres, puede acceder"
+                                            } else {
+                                                return "No puede acceder"
+                                            }
+                                        }
+                                        
+                                        console.log(comprobarSiPuedeAccederAlCine(28, false))
+                                        console.log(comprobarSiPuedeAccederAlCine())
+                                    </code>
+                                </pre>
+                                <p class="parrafos">
+                                    Si no se cumple con la funcion y no le paso todos los argumentos,
+                                    <b>"rompimiento de contrato"</b>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="botones__cambio" style="margin-top: 10px;">
+                            <div class="btn-group boton__caja" role="group">
+                                <a href="./ciclos.html">
+                                    <button class="btn btn-primary" type="button" style="margin-right: 15px;">
+                                        <i class="fa-solid fa-arrow-left" style="margin-right: 10px;"></i>
+                                        Anterior tema
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="btn-group boton__caja" role="group">
+                                <a href="./objetos.html">
+                                    <button class="btn btn-primary" type="button" style="margin-left: 15px;">
+                                        Siguiente tema <i class="fa-solid fa-arrow-right"
+                                            style="margin-left: 10px;"></i>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== Contenedor del Footer ====== -->
+        <footer>
+            <nav class="container navbar navbar-expand-lg navigation2">
+                <div class="container">
+                    <a class="navbar-brand logo__footer hvr-grow" href="../index.html">
+                        <img src="../assets/img/js.png" alt="Logo de Junior School JS">
+                    </a>
+                    <!-- <div class="titulo__footer">
+                        <h2>
+                            Sitio creado con &#x2764;&#xfe0f; por Miguel Serrao.
+                        </h2>
+                    </div> -->
+                    <div class="redes__footer">
+                        <a href="#"><i class="fa-brands fa-facebook facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord discord"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+    </main>
+
+
+    <!-- ====== Script de Bootstrap ====== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+    <!-- ====== Script de AOS ====== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ====== Script de mi Codigo ====== -->
+    <script src="../js/main.js"></script>
+    <!-- ====== Script de mi Codigo ====== -->
+    <script src="../js/prism.js"></script>
+</body>
+
+</html>
