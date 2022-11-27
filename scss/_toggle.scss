@@ -47,7 +47,35 @@
 
  html[data-theme='dark'] {
      .home {
-         background-color: red;
+         background-color: $toggle-color;
+     }
+
+     .home .titulo .contenedor__titulo .contenido__titulo h2 {
+         color: $sidebar-color;
+     }
+
+     .home .titulo .contenedor__titulo .contenido__titulo p {
+         color: $paragraphcolor;
+     }
+
+     .home .clase1 .title__clase1 h2 {
+        color: $sidebar-color;
+     }
+
+     .home .clase1 .contenido__clase1 .cont__clase1 h2 {
+        color: $sidebar-color;
+     }
+
+     .home .clase1 .contenido__clase1 .lista {
+        color: $primary-color;
+     }
+
+     .home .clase1 .contenido__clase1 .cont__clase1 .parrafos {
+        color: $primary-color;
+     }
+
+     .home .clase1 .contenido__clase1 .separadores {
+        color: $sidebar-color;
      }
  }
 
@@ -69,4 +97,3 @@
      -o-transform: translateX(-100%);
      transform: translateX(-100%);
  }
-

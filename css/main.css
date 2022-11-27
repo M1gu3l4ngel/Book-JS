@@ -138,7 +138,28 @@ body {
   font-size: 10px; }
 
 html[data-theme='dark'] .home {
-  background-color: red; }
+  background-color: #fff; }
+
+html[data-theme='dark'] .home .titulo .contenedor__titulo .contenido__titulo h2 {
+  color: #242526; }
+
+html[data-theme='dark'] .home .titulo .contenedor__titulo .contenido__titulo p {
+  color: #9b9d9e; }
+
+html[data-theme='dark'] .home .clase1 .title__clase1 h2 {
+  color: #242526; }
+
+html[data-theme='dark'] .home .clase1 .contenido__clase1 .cont__clase1 h2 {
+  color: #242526; }
+
+html[data-theme='dark'] .home .clase1 .contenido__clase1 .lista {
+  color: #3a3b3c; }
+
+html[data-theme='dark'] .home .clase1 .contenido__clase1 .cont__clase1 .parrafos {
+  color: #3a3b3c; }
+
+html[data-theme='dark'] .home .clase1 .contenido__clase1 .separadores {
+  color: #242526; }
 
 input[type=checkbox] {
   height: 0;
