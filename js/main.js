@@ -3,7 +3,7 @@ AOS.init({
     easing: 'ease-out-back', duration: 2000
 })
 
-// Efecto para *APRENDE EN UN LUGAR...
+// Codigo efecto para titulo animado
 let message = "APRENDE EN UN LUGAR...";
 let msgCount = 0;
 let blinkCount = 0;
@@ -43,5 +43,25 @@ function blinkFunc() {
         clearInterval(timer2);
     }
 }
-
 timer1 = setInterval("textFunc()", 120); // Every 150 milliseconds
+
+
+// Codigo para el Dark/Light mode
+const checkbox = document.querySelector('input[name=mode]');
+
+checkbox.addEventListener('change', function () {
+    if (this.checked) {
+        trans()
+        document.documentElement.setAttribute('data-theme', 'dark')
+    } else {
+        trans()
+        document.documentElement.setAttribute('data-theme', 'light')
+    }
+})
+
+let trans = () => {
+    document.documentElement.classList.add('transition');
+    window.setTimeout(() => {
+        document.documentElement.classList.remove('transition');
+    }, 1000)
+}
