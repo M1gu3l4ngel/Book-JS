@@ -59,14 +59,295 @@
                 <div class="row">
                     <div class="col">
                         <div class="img-cont__clase1">
-                            <img class="fit-cover" src="../assets/img/clase4.PNG" alt="Imagen Conceptos de la Clase">
+                            <img class="fit-cover" src="../assets/img/clase5.PNG" alt="Imagen Conceptos de la Clase">
                         </div>
 
                         <hr class="separadores">
 
                         <div class="cont__clase1">
-                            
+                            <h2>
+                                Objeto
+                            </h2>
+                            <p class="parrafos">
+                                Un objeto literal se define directamente entre llaves { }
+                                Los valores que almacenan se listan separados por coma, bajo la forma propiedad: valor
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const persona1 = { 
+                                        nombre: "Miguel", 
+                                        edad: 25, 
+                                        locacion: "Mexico" 
+                                   }                                   
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Veamos un ejemplo pero NO es un objeto:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const saludar = () => {
+                                        return "Hola usuario"
+                                    }
+                                </code>
+                            </pre>
+                            <h2>
+                                Objeto Literal
+                            </h2>
+                            <ul class="lista">
+                                <li>Un objeto literal</li>
+                                <li>Cuenta con llaves (Eso expresa que es un objeto)</li>
+                                <li>Para estructurar las colecciones precisamos claves: valor</li>
+                                <li>Los objetos estan compuestos por propiedades y metodos</li>
+                            </ul>
+                            <pre>
+                                <code class="language-javascript">
+                                    const persona = {
+                                        nombre: "Facundo",
+                                        altura: 1.80,
+                                        peso: 80,
+                                        pelo: "Lacio",
+                                        ojos: "Grandes",
+                                        mascotas: true,
+                                        id: 0,
+                                    }
+
+                                    const mesa = {
+                                        patas: 4,
+                                        color: "blanca",
+                                        altura: 1.20,
+                                        forma: "circular",
+                                        material: "maneja"
+                                    }
+                                    
+                                    const cliente = {
+                                        nombre: "Roberto",
+                                        apellido: "Gonzales",
+                                        edad: 20,
+                                        creditoHipotecario: true,
+                                        cuentas: [ 21390923840984234, 20809094385 ],
+                                        familia: true,
+                                        deudas: true,
+                                        miembrosFamiliares: {
+                                            esposa: true,
+                                            nombre: "Cecilia"
+                                        }
+                                    }
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Podriamos seguir añadiendo propiedades y precisando del identificador.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    cliente.mascota = true
+
+                                    cliente.hijos = {
+                                        hija: "Milagro",
+                                        hijo: "Raúl"
+                                    }
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Para visualizar los datos, debemos utilizar el punto (.)
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    console.log(cliente.nombre)
+                                    console.log(cliente.edad)
+                                    console.log(cliente.apellido)
+                                    console.log(cliente.hijos.hijo)
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Tambien podemos reasignar valores de las propiedades:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    cliente.nombre = "Felipe"
+                                    cliente.creditoHipotecario = false
+
+                                    console.log(cliente)
+                                </code>
+                            </pre>
                         </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                const y let en objetos
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                    const auto = {
+                                        marca: "fiat"
+                                    }
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Algo que es ilegal en JavaScript es lo siguiente:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    auto = {
+                                        marca: "peugeot"
+                                    }
+
+                                    auto.marca = "peugeot"
+
+                                    console.log(auto)
+                                </code>
+                            </pre>
+                            <h2>
+                                Como se copian objetos
+                            </h2>
+                            <pre>
+                                <code class="language-javascript">
+                                    const otroAuto = auto
+
+                                    console.log(otroAuto)
+
+                                    otroAuto.marca = "Audi"
+                                    otroAuto.color = "Rojo"
+
+                                    console.log(auto)
+                                    console.log(otroAuto)
+                                </code>
+                            </pre>
+                            <h2>
+                                Metodo de copia de objeto
+                            </h2>
+                            <p class="parrafos">
+                                Spread operator, hace una copia que genera una nueva referencia y que no afecta al
+                                copiado.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const autoBienCopiado = {...auto}
+
+                                    autoBienCopiado.marca = "BMW"
+
+                                    console.log(auto)
+                                    console.log(otroAuto)
+                                    console.log(autoBienCopiado)
+                                </code>
+                            </pre>
+                            <h2>
+                                Instanciar objetos a partir de funciones o de clases
+                            </h2>
+                            <p class="parrafos">
+                                Los objetos no solo tienen propiedades, sino que tambien tienen objetos.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    function Character ( nombre, vida, mana, damage, magicRes, armor ) {
+                                        this.name = nombre;
+                                        this.health = vida;
+                                        this.mana = mana;
+                                        this.damage = damage; 
+                                        this.magicRes = magicRes;
+                                        this.armor = armor;
+                                        this.usePotion = () => {
+                                            return 100
+                                        }
+                                    }
+                                    
+                                    const warrior = new Character("Warrior", 300, 0, 80, 50, 75)
+                                    const mage = new Character("Mage", 225, 150, 200, 20, 20)
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Si no se cumple con el contrato de la funcion, todos los valores de las propiedades dan
+                                undefined.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const bardo = new Character()
+
+                                    console.log(bardo)
+                                    console.log(warrior) 
+                                </code>
+                            </pre>
+                            <h2>
+                                Instanciar objetos con Arrow Functions
+                            </h2>
+                            <p class="parrafos">
+                                Y tomemos en cuenta que no llevan la palabra reservada this.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const personaje = ( nombre, vida, damage ) => {
+                                        return ({
+                                            nombre: nombre,
+                                            vida: vida,
+                                            damage: damage,
+                                        })
+                                    }
+                                    
+                                    const tank = personaje("Tank", 400, 30)
+                                    
+                                    console.log(tank)
+                                </code>
+                            </pre>
+                        </div>
+
+                        <hr class="separadores">
+
+                        <div class="cont__clase1">
+                            <h2>
+                                Clases
+                            </h2>
+                            <p class="parrafos">
+                                Las clases de JavaScript, introducidas en ES6, proveen una sintaxis mucho más clara y
+                                simple para crear objetos personalizados.
+                                Son una equivalencia al empleo de función constructora y permite definir distintos tipos
+                                de métodos.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    class Auto {
+                                        constructor (marca, color, potencia, combustible){
+                                            this.marca = marca;
+                                            this.color = color;
+                                            this.potencia = potencia;
+                                            this.combustible = combustible;
+                                        }
+                                        velocidadMaxima() {
+                                            return 300
+                                        }   
+                                    }
+                                    const formulaUno = new Auto( "ferrari", "rojo", 600, "nafta" )
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Se puede pasar el valor de una propiedad como argumento.
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    const color = (color) => {
+                                        return `El auto tiene un color ${color}` 
+                                    }
+                                    console.log(color(formulaUno.color))
+                                    
+                                    console.log(formulaUno)
+                                </code>
+                            </pre>
+                            <p class="parrafos">
+                                Para llamar al metodo de un objeto, hacemos lo siguiente:
+                            </p>
+                            <pre>
+                                <code class="language-javascript">
+                                    console.log(formulaUno.velocidadMaxima())
+                                    console.table(formulaUno)
+                                </code>
+                            </pre>
+                        </div>
+
+
+
+
+
 
                         <hr class="separadores">
 
