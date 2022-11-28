@@ -162,7 +162,7 @@ html[data-theme='dark'] .home .clase1 .contenido__clase1 .separadores {
   color: #242526; }
 
 input[type=checkbox] {
-  height: 0;
+  height: 100px;
   width: 0;
   visibility: hidden; }
 
