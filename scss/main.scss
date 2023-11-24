@@ -8,13 +8,24 @@
 
 /* ======= Import SCSS ======= */
 @import "fonts";
+
 @import "vars";
+
 @import "webkit";
+
 @import "mixing";
+
 @import "hover";
+@import "darkmode";
+
+@import "structure";
+
 @import "header";
-@import "toggle";
+
 @import "home";
+
 @import "paginas";
+
 @import "footer";
+
 @import "queries";

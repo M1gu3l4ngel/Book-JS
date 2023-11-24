@@ -1,114 +1,102 @@
-.home {
-    
-    /* ======= Contenido de la Clase 1 ======= */
-    .clase1 {
-        width: 100%;
-        margin-top: 2.8125rem;
+/* ======= Contenido de la Clase 1 ======= */
+.temas-container {
+    width: 100%;
 
-        .title__clase1 {
-            text-align: center;
-            margin-bottom: 2.5rem;
+    .temas__title {
+        margin-top: 25px;
+        text-align: center;
 
-            h2 {
-                color: $primary-color;
-                font-size: 2.75rem;
-                font-weight: bold;
-                text-transform: uppercase;
-                font-family: 'Bungee', cursive;
-                color: $text-color;
-            }
-        }
-
-        .contenido__clase1 {
-            text-align: center;
-
-            .img-cont__clase1 {
-                margin-bottom: 3.125rem;
-
-                img {
-                    border-radius: 0.4375rem;
-                    max-width: 100%;
-                    height: auto;
-                    width: 40.625rem;
-                }
-            }
-
-            .separadores {
-                color: $secondary-color;
-                margin-top: 1.25rem;
-                margin-bottom: 1.25rem;
-            }
-
-            .cont__clase1 {
-                margin-top: 2.8125rem;
-                margin-bottom: 2.8125rem;
-
-                h2 {
-                    text-align: left;
-                    font-size: 1.5625rem;
-                    font-family: 'Bungee', cursive;
-                    color: $primary-color;
-                    margin-top: 1.875rem;
-                    color: $text-color;
-                }
-
-                .sub-titulos {
-                    font-size: 1.25rem;
-                    color: $text-color;
-                }
-
-                .parrafos {
-                    font-size: 1rem;
-                    text-align: left;
-                    margin-top: 1rem;
-                    margin-bottom: 1rem;
-                    color: $paragraphcolor;
-                }
-
-                pre {
-                    box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
-                }
-            }
-
-            .lista {
-                text-align: left;
-                line-height: 1.875rem;
-                color: $paragraphcolor;
-            }
-        }
-
-        .botones__cambio {
-            width: 100%;
-            height: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-radius: 0.4375rem;
-
-            .boton__caja {
-                a {
-                    button {
-                        background-color: $sidebar-color;
-                        color: $text-color;
-                        border-style: none;
-                        border-radius: 0.4375rem;
-                        box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
-                        border: 1px $secondary-color solid;
-                        font-size: 0.8125rem;
-
-                        &:hover {
-                            box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
-                            background-color: $primary-color;
-                            border: 1px $secondary-color2 solid;
-                        }
-                    }
-                }
-            }
+        h2 {
+            color: $light-7;
+            font-size: 44px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: 'Bungee', cursive;
         }
     }
 
-    :not(pre)>code[class*=language-],
-    pre[class*=language-] {
-        background-color: $sidebar-color;
+    .temas__contenido {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        text-align: center;
+
+        .temas__img {
+            margin-bottom: 50px;
+
+            img {
+                border-radius: 7px;
+                max-width: 100%;
+                height: auto;
+                width: 650px;
+            }
+        }
+
+        .separadores {
+            color: $light-4;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .tema {
+            margin-top: 45px;
+            margin-bottom: 45px;
+
+            h2 {
+                text-align: left;
+                font-size: 25px;
+                font-family: 'Bungee', cursive;
+                color: $light-6;
+                margin-top: 30px;
+            }
+
+            .tema__subtitulo {
+                font-size: 18px;
+                color: $light-6;
+            }
+
+            .tema__parrafo {
+                font-size: 16px;
+                text-align: left;
+                margin-top: 16px;
+                margin-bottom: 16px;
+                color: $light-5;
+            }
+
+
+        }
+
+        .tema__lista {
+            text-align: left;
+            line-height: 30px;
+            color: $light-5;
+        }
+    }
+
+    .botones__cambio {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 7px;
+    
+        .boton__caja {
+    
+            a {
+                
+                font-size: 14px;
+                padding: 10px;
+                border-radius: 7px;
+                text-decoration: none;
+                color: $light-6;
+                font-weight: 500;
+                background-color: $color-2;
+                border: 1px solid $color-2;
+    
+                &:hover {
+                    background-color: $color-3;
+                    
+                }
+            }
+        }
     }
 }

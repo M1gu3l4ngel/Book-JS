@@ -1,88 +1,29 @@
+/* ====== Por encima de 1400px ====== */
+@media screen and (min-width: 1400px) {}
+
 /* ====== Por debajo de 1400px ====== */
-@media screen and (max-width: 1400px) {
-    
-}
-
-
-/* ====== Por debajo de 1200px ====== */
-@media screen and (max-width: 1200px) {
-    
-}
-
+@media screen and (max-width: 1400px) {}
 
 /* ====== Por encima de 1200px ====== */
-@media screen and (min-width: 1200px) {
-    
-}
+@media screen and (min-width: 1200px) {}
 
+/* ====== Por debajo de 1200px ====== */
+@media screen and (max-width: 1200px) {}
 
-/* ====== Por debajo de 1005px ====== */
-@media screen and (max-width: 1005px) {
-    
-}
-
+/* ====== Por encima de 992px ====== */
+@media screen and (min-width: 992px) {}
 
 /* ====== Por debajo de 992px ====== */
-@media screen and (max-width: 992px) {
-
-}
-
-
-/* ====== Por debajo de 789px ====== */
-@media screen and (max-width: 789px) {
-   
-}
-
+@media screen and (max-width: 992px) {}
 
 /* ====== Por encima de 768px ====== */
-@media screen and (min-width: 768px) {
-    
-}
-
+@media screen and (min-width: 768px) {}
 
 /* ====== Por debajo de 768px ====== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {}
 
-}
-
-/* ====== Por encima de 768px ====== */
-@media screen and (min-width: 768px) {
-    
-}
-
+/* ====== Por encima de 576px ====== */
+@media screen and (min-width: 576px) {}
 
 /* ====== Por debajo de 576px ====== */
-@media screen and (max-width: 576px) {
-
-    .home .titulo .contenedor__titulo .contenido__titulo h2 {
-        font-size: 2.8rem;
-    }
-
-    .home .titulo .contenedor__titulo .contenido__titulo p {
-        font-size: 0.885rem;
-    }
-
-    .home .clase1 .title__clase1 h2 {
-        font-size: 2.25rem;
-    }
-
-    .home .clase1 .contenido__clase1 .cont__clase1 h2 {
-        font-size: 1.5rem;
-    }
-    
-
-    header {
-        .navigation {
-            width: 22.8125rem;
-        }
-    }
-
-    footer {
-        .navigation2 {
-            width: 22.8125rem;
-        }
-    }
-
-    
-    
-}
+@media screen and (max-width: 576px) {}

@@ -8,18 +8,17 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/img/js.png" />
     <!-- Descripcion del sitio -->
-    <meta name="description" content="">
+    <meta name="description" content="DESCRIPCION AQUI">
     <!-- Palabras clave -->
-    <meta name="keywords" content="">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- Titulo Web -->
-    <title>Control de Flujos - JavaScript</title>
-    <!-- Mi CSS -->
+    <meta name="keywords" content="PALABRAS CLAVE">
+    <!-- Bootstrap 5.3.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Titulo -->
+    <title>Control de Flujos - Aprendiendo JavaScript</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css" />
-    <!-- Mi CSS -->
-    <link rel="stylesheet" href="../css/prism.css" />
+    <link rel="stylesheet" href="../css/prism.css">
     <!-- Iconos FontAwesome -->
     <script src="https://kit.fontawesome.com/5de37ddf45.js" crossorigin="anonymous"></script>
 </head>
@@ -28,26 +27,67 @@
 
     <main class="home">
         <!-- ======= Comienzo del Header ======= -->
-        <header>
-            <nav class="container navbar navbar-expand-lg navigation">
+        <header class="container">
+            <nav class="card navbar navbar-expand-lg header-nav">
                 <div class="container">
-                    <a class="navbar-brand logo__header hvr-grow" href="../index.html">
+                    <a class="navbar-brand hvr-grow header__logo" href="../index.html">
                         <img src="../assets/img/js.png" alt="Logo de Junior School JS">
                     </a>
-
-                    <div class="one-quarter">
-                        <input class="container_toggle checkbox" type="checkbox" id="switch" name="mode">
-                        <label for="switch" class="label">
-                            <i class="fas fa-moon"></i>
+                    <div class="header-toggle">
+                        <input class="toggle__input" type="checkbox" id="switch" name="mode">
+                        <label for="switch" class="toggle__label">
                             <i class="fas fa-sun"></i>
-                            <div class="ball"></div>
+                            <i class="fas fa-moon"></i>
+                            <div class="toggle__ball"></div>
                         </label>
                     </div>
-
-                    <div class="redes__header">
-                        <a href="#"><i class="fa-brands fa-html5 html"></i></a>
-                        <a href="#"><i class="fa-brands fa-css3-alt css"></i></a>
-                        <a href="#"><i class="fa-brands fa-react react"></i></a>
+                    <div class="header-profile">
+                        <img src="../assets/img/avatar7.png" alt="Imagen" class="dropdown-toggle hvr-grow"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <ul class="dropdown-menu dropdown-menu-end header-dropdown">
+                            <p class="dropdown-header">Contenido</p>
+                            <li>
+                                <a class="dropdown-item activo" href="#">JavaScript</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">HTML</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">CSS</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">React</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">PHP</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">MongoDB</a>
+                            </li>
+                            <div class="dropdown-divider"></div>
+                            <p class="dropdown-header">Plataforma</p>
+                            <li>
+                                <a class="dropdown-item" href="#">Perfil</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Configuración</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Documentación
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Soporte</a>
+                            </li>
+                            <div class="dropdown-divider"></div>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw"></i>
+                                    &nbsp;Cerrar Sesión
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -55,36 +95,44 @@
 
 
         <!-- ====== Comienzo del Contenido ====== -->
-        <div class="container-fluid clase1">
-            <div class="container title__clase1">
-                <div class="row">
-                    <div class="info__clase1">
-                        <h2 id="acerca">
-                            CONTROL DE FLUJOS
-                        </h2>
-                    </div>
+        <div class="container-fluid temas-container">
+            <section class="container">
+                <div class="temas__title">
+                    <h2>💻 Control de Flujos 📝</h2>
                 </div>
-            </div>
+            </section>
 
-            <div class="container contenido__clase1">
+            <div class="container temas__contenido">
                 <div class="row">
                     <div class="col">
-                        <div class="img-cont__clase1">
+                        <div class="temas__img">
                             <img class="fit-cover" src="../assets/img/clase2.PNG" alt="Imagen Conceptos de la Clase">
                         </div>
+                        <div class="botones__cambio">
+                            <div class=" boton__caja" role="group">
+                                <a href="../pages/conceptos.html"><i class="fa-solid fa-arrow-left"></i>
+                                    Anterior tema
+                                </a>
+                            </div>
+                            <div class=" boton__caja" role="group">
+                                <a href="../pages/ciclos.html">Siguiente tema <i class="fa-solid fa-arrow-right"></i>
 
-                        <div class="cont__clase1">
+                                </a>
+                            </div>
+                        </div>
+                        <hr class="separadores">
+                        <div class="tema">
                             <h2>
                                 Valores Booleanos
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Estos pueden tomar dos valores posibles, true o false, verdadero o falso.
                                 Así, para que nuestro programa tome un camino u otro le vamos a decir que resuelva
                                 alguna evaluación/comparación.
                                 Si es verdadera (true) tomará un camino, y si es falsa (false) tomará otro.
 
                             </p>
-                            <ul class="lista">
+                            <ul class="tema__lista">
                                 <li>true: Verdadero</li>
                                 <li>false: Falso</li>
                             </ul>
@@ -115,11 +163,11 @@
 
                         <hr class="separadores">
 
-                        <div class="cont__clase1">
+                        <div class="tema">
                             <h2>
                                 Operadores Logicos
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 En JavaScript, disponemos de los operadores lógicos habituales en lenguajes de
                                 programación como son: es igual, es distinto, menor, menor o igual, mayor, mayor o
                                 igual, and (y), or (o) y not (no).
@@ -129,14 +177,13 @@
                                 Cabe destacar que hay que prestar atención a no confundir ‘==’ con ‘=’ porque implican
                                 distintas cosas.
                             </p>
-                            <div class="img-cont__clase1">
-                                <img class="fit-cover" src="../assets/img/operadores.PNG"
-                                    alt="Imagen Conceptos de la Clase">
+                            <div class="temas__img">
+                                <img class="fit-cover" src="../assets/img/operadores.PNG" alt="Imagen Conceptos de la Clase">
                             </div>
                             <h2>
                                 && AND LOGICO
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Normalmente los operando se van a evaluar de izquierda a derecha.
                                 Por Ejemplo: Jamon (Y) Queso.
                                 <br>
@@ -162,14 +209,14 @@
                                     console.log(user && password && token) // 13109831923
                                 </code>
                             </pre>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 En el ejemplo de arriba queremos evaluar que ambos sean true y es por eso que devuelve
                                 false.
                             </p>
                             <h2>
                                 Como se compone un operador logico en JavaScript?
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Se compone como OPERANDO_1 && OPERANDO_2 --> True si ambos son verdaderos.
                             </p>
                             <pre>
@@ -180,7 +227,7 @@
                                     console.log(false && false) // false
                                 </code>
                             </pre>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Podemos utilizar mas de 2 operandos en una comparacion.
                             </p>
                             <pre>
@@ -190,19 +237,19 @@
                                     console.log(user && password && token)
                                 </code>
                             </pre>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 El AND(&&) siempre te va a devolver el primer valor false y el ultimo valor true, en el
                                 caso
                                 de que toda la cadena de operandos sea true.
                             </p>
                         </div>
 
-                        <div class="cont__clase1">
+                        <div class="tema">
 
                             <h2>
                                 || OR LOGICO
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Normalmente los operando se van a evaluar de izquierda a derecha.
                                 Por Ejemplo: Jamon (O) Queso.
                                 <br>
@@ -242,12 +289,12 @@
 
                         <hr class="separadores">
 
-                        <div class="cont__clase1">
+                        <div class="tema">
 
                             <h2>
                                 ! NOT LOGICO
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Se expresa a traves de un signo de exclamacion, niega el valor Booleano
                                 implicito del dato, quiere decir que invierte su valor booleano.
                             </p>
@@ -271,16 +318,16 @@
 
                         <hr class="separadores">
 
-                        <div class="cont__clase1">
+                        <div class="tema">
                             <h2>
                                 Operadores de Comparacion
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Los operadores de comparacion, comparan el valor de los operandos, mas no su estado
                                 booleano,
                                 siempre de la comparacion devuelven un booleano, que puede ser true o false.
                             </p>
-                            <h2 class="sub-titulos">
+                            <h2 class="tema__subtitulo">
                                 Comparacion de Cantidad
                             </h2>
                             <pre>
@@ -292,7 +339,7 @@
                                     console.log(10 <= 10) // true
                                 </code>
                             </pre>
-                            <h2 class="sub-titulos">
+                            <h2 class="tema__subtitulo">
                                 Comparacion de Valores
                             </h2>
                             <pre>
@@ -301,7 +348,7 @@
                                     console.log("diez" == 10) // false
                                 </code>
                             </pre>
-                            <h2 class="sub-titulos">
+                            <h2 class="tema__subtitulo">
                                 Comparacion estrictira (Valores Tipo de dato)
                             </h2>
                             <pre>
@@ -309,7 +356,7 @@
                                     console.log("10" === 10) // evalúa valor y tipo de dato = //false
                                 </code>
                             </pre>
-                            <h2 class="sub-titulos">
+                            <h2 class="tema__subtitulo">
                                 Desigualdad
                             </h2>
                             <pre>
@@ -317,10 +364,10 @@
                                     console.log(10 != "10") // false
                                 </code>
                             </pre>
-                            <h2 class="sub-titulos">
+                            <h2 class="tema__subtitulo">
                                 Desigualdad Estricta
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Cuando sea diferente por valor o tipo de dato
                             </p>
                             <pre>
@@ -333,7 +380,7 @@
 
                         <hr class="separadores">
 
-                        <div class="cont__clase1">
+                        <div class="tema">
 
                             <h2>
                                 Condicionales: IF, IF ELSE, IF ELSE IF.
@@ -345,7 +392,7 @@
                                     }
                                 </code>
                             </pre>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Veamos lo siguiente:
                             </p>
                             <pre>
@@ -355,7 +402,7 @@
                                     const mayoriaDeEdad = 18
                                 </code>
                             </pre>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Si el usuario es mayor de edad o tiene el permiso de sus padres, puede asistir al cine a
                                 ver
                                 una pelicula de miedo japones.
@@ -365,13 +412,13 @@
                                     edadDelUsuario = 50
                                 </code>
                             </pre>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Veamos ejemplos:
                             </p>
                             <h2>
                                 IF:
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Si la condición se cumple (es decir, si su valor es true) se ejecutan todas las
                                 instrucciones que se encuentran dentro de {...}. Si la condición no se cumple (es decir,
                                 si su valor es false) no se ejecuta ninguna instrucción contenida en {...} y el programa
@@ -384,7 +431,7 @@
                                     }
                                 </code>
                             </pre>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 El IF va a ejecutar sus sentencias o instrucciones siempre y cuando la evaluacion del
                                 caso sea true.
                             </p>
@@ -396,7 +443,7 @@
                             <h2>
                                 IF ELSE:
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 En ocasiones, las decisiones que se deben realizar no son del tipo «si se cumple la
                                 condición, hazlo; si no se cumple, no hagas nada». Normalmente las condiciones suelen
                                 ser del tipo «si se cumple esta condición, hazlo; si no se cumple, haz esto otro».
@@ -414,7 +461,7 @@
                             <h2>
                                 IF ELSE IF ELSE:
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 El else (sino) siempre ejecuta sus intrucciones cuando la evaluación del if es falsa
                             </p>
                             <pre>
@@ -449,21 +496,15 @@
 
                         <hr class="separadores">
 
-                        <div class="botones__cambio" style="margin-top: 10px;">
-                            <div class="btn-group boton__caja" role="group">
-                                <a href="./conceptos.html">
-                                    <button class="btn btn-primary" type="button" style="margin-right: 15px;">
-                                        <i class="fa-solid fa-arrow-left" style="margin-right: 10px;"></i>
-                                        Anterior tema
-                                    </button>
+                        <div class="botones__cambio">
+                            <div class=" boton__caja" role="group">
+                                <a href="../pages/conceptos.html"><i class="fa-solid fa-arrow-left"></i>
+                                    Anterior tema
                                 </a>
                             </div>
-                            <div class="btn-group boton__caja" role="group">
-                                <a href="./ciclos.html">
-                                    <button class="btn btn-primary" type="button" style="margin-left: 15px;">
-                                        Siguiente tema <i class="fa-solid fa-arrow-right"
-                                            style="margin-left: 10px;"></i>
-                                    </button>
+                            <div class=" boton__caja" role="group">
+                                <a href="../pages/ciclos.html">Siguiente tema <i class="fa-solid fa-arrow-right"></i>
+
                                 </a>
                             </div>
                         </div>
@@ -475,21 +516,18 @@
 
 
         <!-- ====== Contenedor del Footer ====== -->
-        <footer>
-            <nav class="container navbar navbar-expand-lg navigation2">
+        <footer class="container">
+            <nav class="card container navbar navbar-expand-lg footer-navbar">
                 <div class="container">
-                    <a class="navbar-brand logo__footer hvr-grow" href="../index.html">
+                    <a class="navbar-brand hvr-grow footer__logo" href="../index.html">
                         <img src="../assets/img/js.png" alt="Logo de Junior School JS">
                     </a>
-                    <!-- <div class="titulo__footer">
-                        <h2>
-                            Sitio creado con &#x2764;&#xfe0f; por Miguel Serrao.
-                        </h2>
-                    </div> -->
-                    <div class="redes__footer">
-                        <a href="#"><i class="fa-brands fa-facebook facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <div class="footer__social">
+                        <a href="#"><i class="fa-brands fa-github github"></i></a>
                         <a href="#"><i class="fa-brands fa-discord discord"></i></a>
+                        <a href="#"><i class="fa-brands fa-html5 html"></i></a>
+                        <a href="#"><i class="fa-brands fa-css3-alt css"></i></a>
+                        <a href="#"><i class="fa-brands fa-react react"></i></a>
                     </div>
                 </div>
             </nav>
@@ -498,14 +536,12 @@
 
 
     <!-- ====== Script de Bootstrap ====== -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-        </script>
-    <!-- ====== Script de AOS ====== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- ====== Script AOSAnimation ====== -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- ====== Script de mi Codigo ====== -->
+    <!-- ====== Script Proyecto ====== -->
     <script src="../js/main.js"></script>
-    <!-- ====== Script de mi Codigo ====== -->
     <script src="../js/prism.js"></script>
 </body>
 

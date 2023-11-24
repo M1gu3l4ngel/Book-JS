@@ -1,66 +1,72 @@
 footer {
-    z-index: 666;
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
 
-    .navbar {
-        width: 82.5rem;
-        height: 5rem;
-        padding: 0.625rem;
-        margin-top: 3.125rem;
-        margin-bottom: 3.125rem;
-        background-color: $sidebar-color;
-        border-radius: 0.4375rem;
-        box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
-    }
-
-    .logo__footer {
-        img {
-            width: 2.8125rem;
-            border-radius: 0.4375rem;
-        }
-    }
-
-    .titulo__footer {
-        width: auto;
+    .footer-navbar {
+        width: 100%;
         height: auto;
+        padding: 10px;
+        margin-bottom: 33.6px;
+        border-radius: 7px;
+    }
 
-        h2 {
-            color: $text-color;
-            font-size: 1rem;
-            margin: 0;
+    .footer__logo {
+        margin: 0;
+        height: 55px;
+        width: auto;
+
+        img {
+            width: auto;
+            height: 100%;
+            border-radius: 7px;
         }
     }
 
-    .redes__footer {
+    .footer__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
 
-        .facebook {
-            color: #0165E1;
+        a {
+            text-decoration: none;
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7px; // Hace que los enlaces sean círculos
+            transition: background-color 0.3s ease; // Agrega una transición de color suave
+
+            &:hover {
+                border: 1px solid $color-2;
+                background-color: $light-1;
+            }
+        }
+
+        .github {
+            color: $blue-2;
         }
 
         .discord {
-            color: #7289DA;
+            color: $blue-2;
         }
 
-        a {
-            padding-top: 0.9375rem;
-            padding-bottom: 0.3125rem;
-            padding-left: 0.625rem;
-            padding-right: 0.625rem;
+        .html {
+            color: $orange-2;
+        }
 
-            &:hover {
-                border: 1px $secondary-color solid;
-                border-radius: 0.4375rem;
-                background-color: $primary-color;
-            }
+        .css {
+            color: $blue-1;
+        }
 
-            i {
-                font-size: 1.875rem;
-                color: $text-color;
-            }
+        .react {
+            color: $blue-3;
         }
     }
 }

@@ -8,18 +8,17 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/img/js.png" />
     <!-- Descripcion del sitio -->
-    <meta name="description" content="">
+    <meta name="description" content="DESCRIPCION AQUI">
     <!-- Palabras clave -->
-    <meta name="keywords" content="">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- Titulo Web -->
-    <title>Ciclos e Iteraciones - JavaScript</title>
-    <!-- Mi CSS -->
+    <meta name="keywords" content="PALABRAS CLAVE">
+    <!-- Bootstrap 5.3.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Titulo -->
+    <title>Ciclos e Iteraciones - Aprendiendo JavaScript</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css" />
-    <!-- Mi CSS -->
-    <link rel="stylesheet" href="../css/prism.css" />
+    <link rel="stylesheet" href="../css/prism.css">
     <!-- Iconos FontAwesome -->
     <script src="https://kit.fontawesome.com/5de37ddf45.js" crossorigin="anonymous"></script>
 </head>
@@ -27,26 +26,67 @@
 <body>
     <main class="home">
         <!-- ======= Comienzo del Header ======= -->
-        <header>
-            <nav class="container navbar navbar-expand-lg navigation">
+        <header class="container">
+            <nav class="card navbar navbar-expand-lg header-nav">
                 <div class="container">
-                    <a class="navbar-brand logo__header hvr-grow" href="../index.html">
+                    <a class="navbar-brand hvr-grow header__logo" href="../index.html">
                         <img src="../assets/img/js.png" alt="Logo de Junior School JS">
                     </a>
-
-                    <div class="one-quarter">
-                        <input class="container_toggle checkbox" type="checkbox" id="switch" name="mode">
-                        <label for="switch" class="label">
-                            <i class="fas fa-moon"></i>
+                    <div class="header-toggle">
+                        <input class="toggle__input" type="checkbox" id="switch" name="mode">
+                        <label for="switch" class="toggle__label">
                             <i class="fas fa-sun"></i>
-                            <div class="ball"></div>
+                            <i class="fas fa-moon"></i>
+                            <div class="toggle__ball"></div>
                         </label>
                     </div>
-
-                    <div class="redes__header">
-                        <a href="#"><i class="fa-brands fa-html5 html"></i></a>
-                        <a href="#"><i class="fa-brands fa-css3-alt css"></i></a>
-                        <a href="#"><i class="fa-brands fa-react react"></i></a>
+                    <div class="header-profile">
+                        <img src="../assets/img/avatar7.png" alt="Imagen" class="dropdown-toggle hvr-grow"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <ul class="dropdown-menu dropdown-menu-end header-dropdown">
+                            <p class="dropdown-header">Contenido</p>
+                            <li>
+                                <a class="dropdown-item activo" href="#">JavaScript</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">HTML</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">CSS</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">React</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">PHP</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">MongoDB</a>
+                            </li>
+                            <div class="dropdown-divider"></div>
+                            <p class="dropdown-header">Plataforma</p>
+                            <li>
+                                <a class="dropdown-item" href="#">Perfil</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Configuración</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Documentación
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Soporte</a>
+                            </li>
+                            <div class="dropdown-divider"></div>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw"></i>
+                                    &nbsp;Cerrar Sesión
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -54,32 +94,40 @@
 
 
         <!-- ====== Comienzo del Contenido ====== -->
-        <div class="container-fluid clase1">
-            <div class="container title__clase1">
-                <div class="row">
-                    <div class="info__clase1">
-                        <h2 id="acerca">
-                            CICLOS E ITERACIONES
-                        </h2>
-                    </div>
+        <div class="container-fluid temas-container">
+            <section class="container">
+                <div class="temas__title">
+                    <h2>💻 Ciclos e Iteraciones 📝</h2>
                 </div>
-            </div>
+            </section>
 
-            <div class="container contenido__clase1">
+            <div class="container temas__contenido">
                 <div class="row">
                     <div class="col">
-                        <div class="img-cont__clase1">
+                        <div class="temas__img">
                             <img class="fit-cover" src="../assets/img/clase3.PNG" alt="Imagen Conceptos de la Clase">
                         </div>
+                        <div class="botones__cambio">
+                            <div class=" boton__caja" role="group">
+                                <a href="../pages/flujos.html"><i class="fa-solid fa-arrow-left"></i>
+                                    Anterior tema
+                                </a>
+                            </div>
+                            <div class=" boton__caja" role="group">
+                                <a href="../pages/funciones.html">Siguiente tema <i class="fa-solid fa-arrow-right"></i>
 
-                        <div class="cont__clase1">
+                                </a>
+                            </div>
+                        </div>
+                        <hr class="separadores">
+                        <div class="tema">
                             <h2>
                                 El Scope
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Es el acceso a un valor.
                             </p>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Esta es una variable global, por lo tanto se puede acceder a ella desde cualquier parte
                                 del código
                             </p>
@@ -88,7 +136,7 @@
                                     let i = 1000
                                 </code>
                             </pre>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Esta es una variable local, o de bloque por lo tanto solo se tiene acceso a ese valor
                                 dentro del ámbito en el que existe
                             </p>
@@ -101,26 +149,26 @@
                             </pre>
                         </div>
 
-                        <div class="cont__clase1">
+                        <div class="tema">
                             <h2>
                                 Bucles en JavaScript
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Es una estructura que permite realizar una tarea repetitiva. Va a tener una condicion
                                 ligada a si mismo para evaluar si sigue iterando sobre un elemento.
                             </p>
                             <h2>
                                 Tipos de Bucles
                             </h2>
-                            <ul class="lista">
+                            <ul class="tema__lista">
                                 <li> <b>Ciclos por conteo</b>: <br> Repiten un bloque de código un número de veces
                                     específico. Estructura for.</li>
                             </ul>
-                            <ul class="lista">
+                            <ul class="tema__lista">
                                 <li> <b>Ciclos condicionales</b>: <br> Repiten un bloque de código mientras la condición
                                     evaluada es verdadera. Estructuras while y do...while.</li>
                             </ul>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
 
                             </p>
                             <pre>
@@ -130,7 +178,7 @@
                                         }
                                 </code>
                             </pre>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Veamos un ejemplo:
                             </p>
                             <pre>
@@ -142,55 +190,55 @@
                             </pre>
                         </div>
 
-                        <div class="cont__clase1">
-                            <h2 class="sub-titulos">
+                        <div class="tema">
+                            <h2 class="tema__subtitulo">
                                 Version en Pseudocodigo
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 <b>Ejemplo: 1</b>
                             </p>
-                            <ul class="lista">
+                            <ul class="tema__lista">
                                 <li>Let inicia con 0</li>
                                 <li>Se comprueba que 0 es menor que 10</li>
                                 <li>Se ejecuta la instruccion console.log()</li>
                                 <li>Se hace el incremento sobre la variable i 0 + 1</li>
                             </ul>
-                            <ul class="lista">
+                            <ul class="tema__lista">
                                 <li>Let inicia con 1</li>
                                 <li>Se comprueba que 0 es menor que 10</li>
                                 <li>Se ejecuta la instruccion console.log()</li>
                                 <li>Se hace el incremento sobre la variable i 1 + 1</li>
                             </ul>
-                            <ul class="lista">
+                            <ul class="tema__lista">
                                 <li>Let inicia con 2</li>
                                 <li>Se comprueba que 0 es menor que 10</li>
                                 <li>Se ejecuta la instruccion console.log()</li>
                                 <li>Se hace el incremento sobre la variable i 2 + 1</li>
                             </ul>
 
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 <b>Ejemplo: 2</b>
                             </p>
-                            <ul class="lista">
+                            <ul class="tema__lista">
                                 <li>0</li>
                                 <li>0 <= 10? true </li>
                                 <li>Se ejecuta la instruccion</li>
                                 <li>Se suma 1 a la variable</li>
                             </ul>
-                            <ul class="lista">
+                            <ul class="tema__lista">
                                 <li>1 <= 10? true </li>
                                 <li>Se ejecuta la instruccion</li>
                                 <li>Se suma 1 a la variable</li>
                             </ul>
-                            <ul class="lista">
+                            <ul class="tema__lista">
                                 <li>2 <= 10? true </li>
                                 <li>Se ejecuta la instruccion</li>
                                 <li>Se suma 1 a la variable</li>
                             </ul>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 <b>Ejemplo: 3</b>
                             </p>
-                            <ul class="lista">
+                            <ul class="tema__lista">
                                 <li>11 <= 10? false --> Ya no se ejecutan las sentencias del for y termina la iteracion.
                                 </li>
                             </ul>
@@ -199,12 +247,12 @@
                         <hr class="separadores">
 
 
-                        <div class="cont__clase1">
+                        <div class="tema">
 
                             <h2>
                                 Estructura FOR
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 El <b>"desde"</b> es la zona en la que se establecen los valores iniciales de las
                                 variables que
                                 controlan el ciclo.
@@ -225,7 +273,7 @@
                             <h2>
                                 For con contador negativo
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 El i-- lo que hace es una resta. Osea i -= x va a restar la cantidad establecida.
                             </p>
                             <pre>
@@ -237,11 +285,11 @@
                             </pre>
                         </div>
 
-                        <div class="cont__clase1">
+                        <div class="tema">
                             <h2>
                                 For con contador diferente a 1
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 El i += x va a sumar la cantidad establecida distinta a 1.
                             </p>
                             <pre>
@@ -256,7 +304,7 @@
                             <h2>
                                 Ejemplo práctico: Turnos
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Algoritmo para dar turno del 1 al 20 a los nombres ingresados.
                             </p>
                             <pre>
@@ -273,11 +321,11 @@
 
                         <hr class="separadores">
 
-                        <div class="cont__clase1">
+                        <div class="tema">
                             <h2>
                                 Sentencia Break
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 A veces, cuando escribimos una estructura for, necesitamos que bajo cierta condición el
                                 ciclo se interrumpa. Para eso se utiliza la sentencia break.
                                 Al escribir esa línea dentro de un ciclo for, el mismo se interrumpirá como si hubiera
@@ -298,11 +346,11 @@
 
                         <hr class="separadores">
 
-                        <div class="cont__clase1">
+                        <div class="tema">
                             <h2>
                                 Sentencia Continue
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 A veces, cuando escribimos una estructura for, necesitamos que bajo cierta condición, el
                                 ciclo saltee esa repetición y siga con la próxima. Para eso se utiliza la sentencia
                                 continue.
@@ -324,11 +372,11 @@
 
                         <hr class="separadores">
 
-                        <div class="cont__clase1">
+                        <div class="tema">
                             <h2>
                                 While
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 El while tambien itera sobre elementos. Tiene el valor inicial fuera de un bloque, es
                                 decir tiene scope global.
                                 <br>
@@ -350,7 +398,7 @@
                                     }
                                 </code>
                             </pre>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Como tambien podemos observar:
                             </p>
                             <pre>
@@ -367,11 +415,11 @@
 
                         <hr class="separadores">
 
-                        <div class="cont__clase1">
+                        <div class="tema">
                             <h2>
                                 Do..While
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Siempre va a ejecutar la instruccion aunque sea una vez.
                                 <br>
                                 <br>
@@ -395,11 +443,11 @@
 
                         <hr class="separadores">
 
-                        <div class="cont__clase1">
+                        <div class="tema">
                             <h2>
                                 Switch
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Evalua casos comparando datos, si no usamos break, se ejecuta la sentencia posterior
                                 sin importar que no cumpla con el caso.
                                 <br>
@@ -420,7 +468,7 @@
                                             console.log("El kilo de naranja está $100")
                                             break;
                                         default:
-                                            console.log("Eso no es una fruta oops o no está en nuestra lista de productos")
+                                            console.log("Eso no es una fruta oops o no está en nuestra tema__lista de productos")
                                             break;
                                     }
                                 </code>
@@ -428,7 +476,7 @@
                             <h2>
                                 Ejemplo aplicado: WHILE y SWITCH
                             </h2>
-                            <p class="parrafos">
+                            <p class="tema__parrafo">
                                 Algoritmo que hace la operación según la entrada, pero ignora la ejecución de bloque si
                                 la entrada es en “ESC”.
                             </p>
@@ -454,8 +502,8 @@
                             </pre>
                         </div>
 
-                        <div class="cont__clase1">
-                            <p class="parrafos">
+                        <div class="tema">
+                            <p class="tema__parrafo">
                                 Podriamos usar .length , que nos permite determinar la longitud de una
                                 cadena y te devuelve un numero.
                             </p>
@@ -471,8 +519,8 @@
                                     }
                                 </code>
                             </pre>
-                            <div class="cont__clase1">
-                                <ul class="lista">
+                            <div class="tema">
+                                <ul class="tema__lista">
                                     <li>0 <= 8</li>
                                     <li>0 -> w</li>
                                     <li>1 -> i</li>
@@ -484,7 +532,7 @@
                                     <li>7 -> s</li>
                                     <li>8 -> undefined</li>
                                 </ul>
-                                <ul class="lista">
+                                <ul class="tema__lista">
                                     <li>0 < 8</li>
                                     <li>0 -> w</li>
                                     <li>1 -> i</li>
@@ -500,7 +548,7 @@
 
                         <hr class="separadores">
 
-                        <div class="cont__clase1">
+                        <div class="tema">
                             <h2>
                                 Variable acumuladora para preservar todas las iteraciones
                             </h2>
@@ -519,21 +567,15 @@
 
                         <hr class="separadores">
 
-                        <div class="botones__cambio" style="margin-top: 10px;">
-                            <div class="btn-group boton__caja" role="group">
-                                <a href="./flujos.html">
-                                    <button class="btn btn-primary" type="button" style="margin-right: 15px;">
-                                        <i class="fa-solid fa-arrow-left" style="margin-right: 10px;"></i>
-                                        Anterior tema
-                                    </button>
+                        <div class="botones__cambio">
+                            <div class=" boton__caja" role="group">
+                                <a href="../pages/flujos.html"><i class="fa-solid fa-arrow-left"></i>
+                                    Anterior tema
                                 </a>
                             </div>
-                            <div class="btn-group boton__caja" role="group">
-                                <a href="./funciones.html">
-                                    <button class="btn btn-primary" type="button" style="margin-left: 15px;">
-                                        Siguiente tema <i class="fa-solid fa-arrow-right"
-                                            style="margin-left: 10px;"></i>
-                                    </button>
+                            <div class=" boton__caja" role="group">
+                                <a href="../pages/funciones.html">Siguiente tema <i class="fa-solid fa-arrow-right"></i>
+
                                 </a>
                             </div>
                         </div>
@@ -544,21 +586,18 @@
         </div>
 
         <!-- ====== Contenedor del Footer ====== -->
-        <footer>
-            <nav class="container navbar navbar-expand-lg navigation2">
+        <footer class="container">
+            <nav class="card container navbar navbar-expand-lg footer-navbar">
                 <div class="container">
-                    <a class="navbar-brand logo__footer hvr-grow" href="../index.html">
+                    <a class="navbar-brand hvr-grow footer__logo" href="../index.html">
                         <img src="../assets/img/js.png" alt="Logo de Junior School JS">
                     </a>
-                    <!-- <div class="titulo__footer">
-                        <h2>
-                            Sitio creado con &#x2764;&#xfe0f; por Miguel Serrao.
-                        </h2>
-                    </div> -->
-                    <div class="redes__footer">
-                        <a href="#"><i class="fa-brands fa-facebook facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <div class="footer__social">
+                        <a href="#"><i class="fa-brands fa-github github"></i></a>
                         <a href="#"><i class="fa-brands fa-discord discord"></i></a>
+                        <a href="#"><i class="fa-brands fa-html5 html"></i></a>
+                        <a href="#"><i class="fa-brands fa-css3-alt css"></i></a>
+                        <a href="#"><i class="fa-brands fa-react react"></i></a>
                     </div>
                 </div>
             </nav>
@@ -567,14 +606,12 @@
 
 
     <!-- ====== Script de Bootstrap ====== -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-        </script>
-    <!-- ====== Script de AOS ====== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- ====== Script AOSAnimation ====== -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- ====== Script de mi Codigo ====== -->
+    <!-- ====== Script Proyecto ====== -->
     <script src="../js/main.js"></script>
-    <!-- ====== Script de mi Codigo ====== -->
     <script src="../js/prism.js"></script>
 </body>
 

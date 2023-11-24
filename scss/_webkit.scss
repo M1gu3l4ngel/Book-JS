@@ -1,15 +1,14 @@
 /* ====== Color al copiar texto en web ====== */
 ::selection {
-    background-color: $primary-color;
-    color: $toggle-color;
+    background-color: $light-6;
+    color: $white-1;
 }
 
 
 /* ====== Ancho y Alto del Scroll ====== */
 html::-webkit-scrollbar {
     width: 8px;
-    
-    background-color: $body-color;
+    background-color: $light-8;
     border-radius: 0.25rem;
     box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
@@ -17,13 +16,12 @@ html::-webkit-scrollbar {
 
 /* ====== Ponemos un color de fondo y redondeamos las esquinas del thumb ====== */
 html::-webkit-scrollbar-thumb {
-    background: $secondary-color;
+    background: $color-2;
     border-radius: 0.25rem;
 }
 
 
 /* ====== Cambiamos el fondo y agregamos una sombra cuando esté en hover ====== */
 html::-webkit-scrollbar-thumb:hover {
-    background: $secondary-color2;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #dfc81c;
 }

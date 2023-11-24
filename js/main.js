@@ -1,8 +1,3 @@
-// Codigo de AOS
-AOS.init({
-    easing: 'ease-out-back', duration: 2000
-})
-
 // Codigo para el Dark/Light mode
 const checkbox = document.querySelector('input[name=mode]');
 
@@ -28,3 +23,9 @@ const tema = localStorage.getItem('data-theme')
 if (tema) {
     document.documentElement.setAttribute('data-theme', tema)
 }
+
+
+// Codigo de AOS
+AOS.init({
+    easing: 'ease-out-back', duration: 2000
+})

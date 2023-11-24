@@ -8,18 +8,16 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/img/js.png" />
     <!-- Descripcion del sitio -->
-    <meta name="">
+    <meta name="description" content="DESCRIPCION AQUI">
     <!-- Palabras clave -->
-    <meta name="keywords" content="">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- Titulo Web -->
-    <title>Conceptos Generales - JavaScript</title>
-    <!-- Mi CSS -->
+    <meta name="keywords" content="PALABRAS CLAVE">
+    <!-- Bootstrap 5.3.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Titulo -->
+    <title>Inicio - Aprendiendo JavaScript</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css" />
-    <!-- Prism CSS (Codigo) -->
-    <link rel="stylesheet" href="./css/prism.css" />
     <!-- Iconos FontAwesome -->
     <script src="https://kit.fontawesome.com/5de37ddf45.js" crossorigin="anonymous"></script>
 </head>
@@ -27,331 +25,300 @@
 <body>
     <main class="home">
         <!-- ======= Comienzo del Header ======= -->
-        <header>
-            <nav class="container navbar navbar-expand-lg navigation">
+        <header class="container">
+            <nav class="card navbar navbar-expand-lg header-nav">
                 <div class="container">
-                    <a class="navbar-brand logo__header hvr-grow" href="index.html">
+                    <a class="navbar-brand hvr-grow header__logo" href="index.html">
                         <img src="./assets/img/js.png" alt="Logo de Junior School JS">
                     </a>
-
-                    <div class="one-quarter">
-                        <input class="container_toggle checkbox" type="checkbox" id="switch" name="mode">
-                        <label for="switch" class="label">
-                            <i class="fas fa-moon"></i>
+                    <div class="header-toggle">
+                        <input class="toggle__input" type="checkbox" id="switch" name="mode">
+                        <label for="switch" class="toggle__label">
                             <i class="fas fa-sun"></i>
-                            <div class="ball"></div>
+                            <i class="fas fa-moon"></i>
+                            <div class="toggle__ball"></div>
                         </label>
                     </div>
-
-                    <div class="redes__header">
+                    <div class="header-profile">
+                        <img src="./assets/img/avatar7.png" alt="Imagen" class="dropdown-toggle hvr-grow"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <ul class="dropdown-menu dropdown-menu-end header-dropdown">
+                            <p class="dropdown-header">Contenido</p>
+                            <li>
+                                <a class="dropdown-item activo" href="#">JavaScript</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">HTML</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">CSS</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">React</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">PHP</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">MongoDB</a>
+                            </li>
+                            <div class="dropdown-divider"></div>
+                            <p class="dropdown-header">Plataforma</p>
+                            <li>
+                                <a class="dropdown-item" href="#">Perfil</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Configuración</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Documentación
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Soporte</a>
+                            </li>
+                            <div class="dropdown-divider"></div>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw"></i>
+                                    &nbsp;Cerrar Sesión
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- ====== Comienzo del Contenido ====== -->
+        <section class="container">
+            <div class="home-title">
+                <h2>💻 Aprendiendo JavaScript 📝</h2>
+            </div>
+        </section>
+        <div class="container main-container">
+            <div class="row gy-3 gx-3 row-cols-1 row-cols-md-2 row-cols-xl-3 d-lg-flex justify-content-lg-center">
+                <div class="col-md-6 col-xl-6 main-card-box">
+                    <div class="card main__card">
+                        <div class="main-card__info">
+                            <h2 class="card-title">
+                                Conceptos Generales
+                            </h2>
+                            <div class="main-card__button">
+                                <a href="./pages/conceptos.html" role="button">Ver contenido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6 main-card-box">
+                    <div class="card main__card">
+                        <div class="main-card__info">
+                            <h2 class="card-title">
+                                Control de Flujos
+                            </h2>
+                            <div class="main-card__button">
+                                <a href="./pages/flujos.html" role="button">Ver contenido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6 main-card-box">
+                    <div class="card main__card">
+                        <div class="main-card__info">
+                            <h2 class="card-title">
+                                Ciclos e Iteraciones
+                            </h2>
+                            <div class="main-card__button">
+                                <a href="./pages/ciclos.html" role="button">Ver contenido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6 main-card-box">
+                    <div class="card main__card">
+                        <div class="main-card__info">
+                            <h2 class="card-title">
+                                Funciones
+                            </h2>
+                            <div class="main-card__button">
+                                <a href="./pages/funciones.html" role="button">Ver contenido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6 main-card-box">
+                    <div class="card main__card">
+                        <div class="main-card__info">
+                            <h2 class="card-title">
+                                Objetos
+                            </h2>
+                            <div class="main-card__button">
+                                <a href="./pages/objetos.html" role="button">Ver contenido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6 main-card-box">
+                    <div class="card main__card">
+                        <div class="main-card__info">
+                            <h2 class="card-title">
+                                Arrays
+                            </h2>
+                            <div class="main-card__button">
+                                <a href="#" role="button">Ver contenido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6 main-card-box">
+                    <div class="card main__card">
+                        <div class="main-card__info">
+                            <h2 class="card-title">
+                                Higher Order Functions
+                            </h2>
+                            <div class="main-card__button">
+                                <a href="#" role="button">Ver contenido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6 main-card-box">
+                    <div class="card main__card">
+                        <div class="main-card__info">
+                            <h2 class="card-title">
+                                DOM
+                            </h2>
+                            <div class="main-card__button">
+                                <a href="#" role="button">Ver contenido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6 main-card-box">
+                    <div class="card main__card">
+                        <div class="main-card__info">
+                            <h2 class="card-title">
+                                Eventos
+                            </h2>
+                            <div class="main-card__button">
+                                <a href="#" role="button">Ver contenido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6 main-card-box">
+                    <div class="card main__card">
+                        <div class="main-card__info">
+                            <h2 class="card-title">
+                                Storage y JSON
+                            </h2>
+                            <div class="main-card__button">
+                                <a href="#" role="button">Ver contenido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6 main-card-box">
+                    <div class="card main__card">
+                        <div class="main-card__info">
+                            <h2 class="card-title">
+                                Workshop 1
+                            </h2>
+                            <div class="main-card__button">
+                                <a href="#" role="button">Ver contenido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6 main-card-box">
+                    <div class="card main__card">
+                        <div class="main-card__info">
+                            <h2 class="card-title">
+                                Operadores Avanzados
+                            </h2>
+                            <div class="main-card__button">
+                                <a href="#" role="button">Ver contenido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6 main-card-box">
+                    <div class="card main__card">
+                        <div class="main-card__info">
+                            <h2 class="card-title">
+                                Librerias JS
+                            </h2>
+                            <div class="main-card__button">
+                                <a href="#" role="button">Ver contenido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6 main-card-box">
+                    <div class="card main__card">
+                        <div class="main-card__info">
+                            <h2 class="card-title">
+                                Async y Promesas
+                            </h2>
+                            <div class="main-card__button">
+                                <a href="#" role="button">Ver contenido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6 main-card-box">
+                    <div class="card main__card">
+                        <div class="main-card__info">
+                            <h2 class="card-title">
+                                Ajax y Fetch
+                            </h2>
+                            <div class="main-card__button">
+                                <a href="#" role="button">Ver contenido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6 main-card-box">
+                    <div class="card main__card">
+                        <div class="main-card__info">
+                            <h2 class="card-title">
+                                Frameworks y NodeJS
+                            </h2>
+                            <div class="main-card__button">
+                                <a href="#" role="button">Ver contenido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ====== Contenedor del Footer ====== -->
+        <footer class="container">
+            <nav class="card container navbar navbar-expand-lg footer-navbar">
+                <div class="container">
+                    <a class="navbar-brand hvr-grow footer__logo" href="index.html">
+                        <img src="./assets/img/js.png" alt="Logo de Junior School JS">
+                    </a>
+                    <div class="footer__social">
+                        <a href="#"><i class="fa-brands fa-github github"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord discord"></i></a>
                         <a href="#"><i class="fa-brands fa-html5 html"></i></a>
                         <a href="#"><i class="fa-brands fa-css3-alt css"></i></a>
                         <a href="#"><i class="fa-brands fa-react react"></i></a>
                     </div>
                 </div>
             </nav>
-        </header>
-
-
-
-        <!-- ====== Comienzo del Contenido ====== -->
-        <section class="container titulo">
-            <div class="row">
-                <div
-                    class="col-md-10 col-xl-8 d-sm-flex d-md-flex justify-content-md-start align-items-md-center justify-content-xl-center contenedor__titulo">
-                    <div class="contenido__titulo">
-                        <h2 id="messageLabel">
-                            APRENDE EN UN LUGAR...
-                        </h2>
-                        <p>
-                            ... en el que puedas formar parte de un club escolar, un grupo de devs o una
-                            comunidad mundial de codigo. En el que puedas pasar tiempo con unos cuantos colegas.
-                            Un lugar que haga que hablar a diario y divertirte más a menudo sea fácil.
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="container py-xl-5 tema">
-            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3 d-lg-flex justify-content-lg-center">
-                <div class="col-md-6 col-xl-6 offset-xl-0 caja">
-                    <div class="card__caja">
-                        <div class="info__caja">
-                            <h2 class="card-title">
-                                Conceptos Generales
-                            </h2>
-                            <div class="boton__caja">
-                                <a href="./pages/conceptos.html" role="button">
-                                    <button class="btn btn-primary" type="button">Ver contenido</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-6 offset-xl-0 caja">
-                    <div class="card__caja">
-                        <div class="card-body info__caja">
-                            <h2 class="card-title">
-                                Control de Flujos
-                            </h2>
-                            <div class="boton__caja">
-                                <a href="./pages/flujos.html" role="button">
-                                    <button class="btn btn-primary" type="button">Ver contenido</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-6 offset-xl-0 caja">
-                    <div class="card__caja">
-                        <div class="card-body info__caja">
-                            <h2 class="card-title">
-                                Ciclos e Iteraciones
-                            </h2>
-                            <div class="boton__caja">
-                                <a href="./pages/ciclos.html" role="button">
-                                    <button class="btn btn-primary" type="button">Ver contenido</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-6 offset-xl-0 caja">
-                    <div class="card__caja">
-                        <div class="card-body info__caja">
-                            <h2 class="card-title">
-                                Funciones
-                            </h2>
-                            <div class="boton__caja">
-                                <a href="./pages/funciones.html" role="button">
-                                    <button class="btn btn-primary" type="button">Ver contenido</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-6 offset-xl-0 caja">
-                    <div class="card__caja">
-                        <div class="card-body info__caja">
-                            <h2 class="card-title">
-                                Objetos
-                            </h2>
-                            <div class="boton__caja">
-                                <a href="./pages/objetos.html" role="button">
-                                    <button class="btn btn-primary" type="button">Ver contenido</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-6 offset-xl-0 caja">
-                    <div class="card__caja">
-                        <div class="card-body info__caja">
-                            <h2 class="card-title">
-                                Arrays
-                            </h2>
-                            <div class="boton__caja">
-                                <a href="#" role="button">
-                                    <button class="btn btn-primary" type="button">Ver contenido</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-6 offset-xl-0 caja">
-                    <div class="card__caja">
-                        <div class="card-body info__caja">
-                            <h2 class="card-title">
-                                Higher Order Functions
-                            </h2>
-                            <div class="boton__caja">
-                                <a href="#" role="button">
-                                    <button class="btn btn-primary" type="button">Ver contenido</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-6 offset-xl-0 caja">
-                    <div class="card__caja">
-                        <div class="card-body info__caja">
-                            <h2 class="card-title">
-                                DOM
-                            </h2>
-                            <div class="boton__caja">
-                                <a href="#" role="button">
-                                    <button class="btn btn-primary" type="button">Ver contenido</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-6 offset-xl-0 caja">
-                    <div class="card__caja">
-                        <div class="card-body info__caja">
-                            <h2 class="card-title">
-                                Eventos
-                            </h2>
-                            <div class="boton__caja">
-                                <a href="#" role="button">
-                                    <button class="btn btn-primary" type="button">Ver contenido</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-6 offset-xl-0 caja">
-                    <div class="card__caja">
-                        <div class="card-body info__caja">
-                            <h2 class="card-title">
-                                Storage y JSON
-                            </h2>
-                            <div class="boton__caja">
-                                <a href="#" role="button">
-                                    <button class="btn btn-primary" type="button">Ver contenido</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-6 offset-xl-0 caja">
-                    <div class="card__caja">
-                        <div class="card-body info__caja">
-                            <h2 class="card-title">
-                                Workshop I
-                            </h2>
-                            <div class="boton__caja">
-                                <a href="#" role="button">
-                                    <button class="btn btn-primary" type="button">Ver contenido</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-6 offset-xl-0 caja">
-                    <div class="card__caja">
-                        <div class="card-body info__caja">
-                            <h2 class="card-title">
-                                Operadores Avanzados
-                            </h2>
-                            <div class="boton__caja">
-                                <a href="#" role="button">
-                                    <button class="btn btn-primary" type="button">Ver contenido</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-6 offset-xl-0 caja">
-                    <div class="card__caja">
-                        <div class="card-body info__caja">
-                            <h2 class="card-title">
-                                Librerias JS
-                            </h2>
-                            <div class="boton__caja">
-                                <a href="#" role="button">
-                                    <button class="btn btn-primary" type="button">Ver contenido</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-6 offset-xl-0 caja">
-                    <div class="card__caja">
-                        <div class="card-body info__caja">
-                            <h2 class="card-title">
-                                Async y Promesas
-                            </h2>
-                            <div class="boton__caja">
-                                <a href="#" role="button">
-                                    <button class="btn btn-primary" type="button">Ver contenido</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-6 offset-xl-0 caja">
-                    <div class="card__caja">
-                        <div class="card-body info__caja">
-                            <h2 class="card-title">
-                                Ajax y Fetch
-                            </h2>
-                            <div class="boton__caja">
-                                <a href="#" role="button">
-                                    <button class="btn btn-primary" type="button">Ver contenido</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-6 offset-xl-0 caja">
-                    <div class="card__caja">
-                        <div class="card-body info__caja">
-                            <h2 class="card-title">
-                                Frameworks y NodeJS
-                            </h2>
-                            <div class="boton__caja">
-                                <a href="#" role="button">
-                                    <button class="btn btn-primary" type="button">Ver contenido</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- ====== Contenedor del Footer ====== -->
-        <footer>
-            <nav class="container navbar navbar-expand-lg navigation2">
-                <div class="container">
-                    <a class="navbar-brand logo__footer hvr-grow" href="index.html">
-                        <img src="./assets/img/js.png" alt="Logo de Junior School JS">
-                    </a>
-                    <!-- <div class="titulo__footer">
-                        <h2>
-                            Sitio creado con &#x2764;&#xfe0f; por Miguel Serrao.
-                        </h2>
-                    </div> -->
-                    <div class="redes__footer">
-                        <a href="#"><i class="fa-brands fa-facebook facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href="#"><i class="fa-brands fa-discord discord"></i></a>
-                    </div>
-                </div>
-            </nav>
         </footer>
     </main>
 
-    <!-- ====== Script de Bootstrap ====== -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-        </script>
-    <!-- ====== Script de AOS ====== -->
+    <!-- ====== Script Boostrap 5.3.2 ====== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- ====== Script AOSAnimation ====== -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- ====== Script de mi Codigo ====== -->
-    <script src="js/main.js"></script>
-    <!-- ====== Script de mi Codigo ====== -->
-    <script src="js/prism.js"></script>
+    <!-- ====== Script Proyecto ====== -->
+    <script src="/js/main.js"></script>
+    <script src="/js/prism.js"></script>
 </body>
 
 </html>
