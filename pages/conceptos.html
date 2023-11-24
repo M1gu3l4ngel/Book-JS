@@ -8,17 +8,21 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/img/js.png" />
     <!-- Descripcion del sitio -->
-    <meta name="description" content="DESCRIPCION AQUI">
+    <meta name="description"
+        content="Explora los conceptos fundamentales de JavaScript de manera clara y accesible. Nuestra página de conceptos básicos ofrece apuntes detallados y tutoriales diseñados especialmente para principiantes en el mundo de la programación con JavaScript. Desde variables y funciones hasta estructuras de control, aprende los pilares esenciales para construir tu conocimiento en desarrollo web. ¡Inicia tu viaje con nosotros y descubre la magia detrás del lenguaje de programación más utilizado en la web!">
     <!-- Palabras clave -->
-    <meta name="keywords" content="PALABRAS CLAVE">
+    <meta name="keywords"
+        content="JavaScript básico, programación para principiantes, variables en JavaScript, funciones en JavaScript, estructuras de control, tutoriales JavaScript, introducción a JavaScript, conceptos fundamentales, desarrollo web básico, aprendizaje interactivo">
+    <!-- Autor -->
+    <meta name="author" content="Miguel Angel - github.com/M1gu3l4ngel/">
     <!-- Bootstrap 5.3.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Titulo -->
     <title>Conceptos Básicos - Aprendiendo JavaScript</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/prism.css">
+    <link type="text/css" rel="stylesheet" href="../css/main.css" />
+    <link type="text/css" rel="stylesheet" href="../css/prism.css">
     <!-- Iconos FontAwesome -->
     <script src="https://kit.fontawesome.com/5de37ddf45.js" crossorigin="anonymous"></script>
 </head>
@@ -33,7 +37,6 @@
                     <a class="navbar-brand hvr-grow header__logo" href="../index.html">
                         <img src="../assets/img/js.png" alt="Logo de Junior School JS">
                     </a>
-
                     <div class="header-toggle">
                         <input class="toggle__input" type="checkbox" id="switch" name="mode">
                         <label for="switch" class="toggle__label">
@@ -42,59 +45,45 @@
                             <div class="toggle__ball"></div>
                         </label>
                     </div>
-
-
                     <div class="header-profile">
                         <img src="../assets/img/avatar7.png" alt="Imagen" class="dropdown-toggle hvr-grow"
                             data-bs-toggle="dropdown" aria-expanded="false">
                         <ul class="dropdown-menu dropdown-menu-end header-dropdown">
-
-
                             <p class="dropdown-header">Contenido</p>
                             <li>
                                 <a class="dropdown-item activo" href="#">JavaScript</a>
                             </li>
-
                             <li>
                                 <a class="dropdown-item" href="#">HTML</a>
                             </li>
-
                             <li>
                                 <a class="dropdown-item" href="#">CSS</a>
                             </li>
-
                             <li>
                                 <a class="dropdown-item" href="#">React</a>
                             </li>
-
                             <li>
                                 <a class="dropdown-item" href="#">PHP</a>
                             </li>
-
                             <li>
                                 <a class="dropdown-item" href="#">MongoDB</a>
                             </li>
-
                             <div class="dropdown-divider"></div>
                             <p class="dropdown-header">Plataforma</p>
                             <li>
                                 <a class="dropdown-item" href="#">Perfil</a>
                             </li>
-
                             <li>
                                 <a class="dropdown-item" href="#">Configuración</a>
                             </li>
-
                             <li>
                                 <a class="dropdown-item" href="#">
                                     Documentación
                                 </a>
                             </li>
-
                             <li>
                                 <a class="dropdown-item" href="#">Soporte</a>
                             </li>
-
                             <div class="dropdown-divider"></div>
                             <li>
                                 <a class="dropdown-item" href="#">
@@ -108,16 +97,14 @@
             </nav>
         </header>
 
+
         <!-- ====== Comienzo del Contenido ====== -->
         <div class="container temas-container">
             <section class="container">
                 <div class="temas__title">
-                    <h2>Conceptos Generales</h2>
+                    <h2>Conceptos Básicos</h2>
                 </div>
             </section>
-
-
-
 
             <div class="container temas__contenido">
                 <div class="row">
@@ -138,7 +125,6 @@
                             </div>
                         </div>
                         <hr class="separadores">
-
                         <div class="tema">
                             <h2>
                                 A tomar en cuenta:
@@ -615,7 +601,7 @@
                             </h2>
                             <p class="tema__parrafo">
                                 Es una ventana emergente la cual interactua el usuario, es nativa del navegador.
-                                Esta venta no es customizable y solo se utiliza para aprender lo basico de JavaScript.
+                                Esta ventana no es customizable y solo se utiliza para aprender lo basico de JavaScript.
                             </p>
                             <h2 class="tema__subtitulo">
                                 alert
@@ -627,7 +613,7 @@
                             </p>
                             <pre>
                                 <code class="language-javascript">
-                                    alert("Hola bienvenidos a JuniorBookJS!")
+                                    alert("Hola, Bienvenidos a Aprendiendo JS!")
                                 </code>
                             </pre>
                             <h2 class="tema__subtitulo">
@@ -672,7 +658,7 @@
                                 </a>
                             </div>
                             <div class=" boton__caja" role="group">
-                                <a href="../flujos.html">Siguiente tema <i class="fa-solid fa-arrow-right"></i>
+                                <a href="./flujos.html">Siguiente tema <i class="fa-solid fa-arrow-right"></i>
 
                                 </a>
                             </div>
@@ -682,6 +668,7 @@
                 </div>
             </div>
         </div>
+
 
         <!-- ====== Contenedor del Footer ====== -->
         <footer class="container">
@@ -702,14 +689,15 @@
         </footer>
     </main>
 
+
     <!-- ====== Script de Bootstrap ====== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- ====== Script AOSAnimation ====== -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- ====== Script Proyecto ====== -->
-    <script src="../js/main.js"></script>
-    <script src="../js/prism.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/prism.js"></script>
 </body>
 
 </html>

@@ -204,6 +204,8 @@ header {
   .temas-container .temas__contenido {
     padding-top: 24px;
     padding-bottom: 24px;
+    padding-left: 0;
+    padding-right: 0;
     text-align: center; }
     .temas-container .temas__contenido .temas__img {
       margin-bottom: 50px; }
