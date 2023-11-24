@@ -9,6 +9,7 @@ body {
         background-color: $light-1;
         transition: $tran;
 
+        /* ====== Cambiar color fondo cajas codigo JS ====== */
         :not(pre)>code[class*=language-],
         pre[class*=language-] {
             background-color: $light-6;

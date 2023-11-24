@@ -1,4 +1,6 @@
-// Codigo para el Dark/Light mode
+//-----------------------------------------------
+// Dark/Light Mode
+//-----------------------------------------------
 const checkbox = document.querySelector('input[name=mode]');
 
 checkbox.addEventListener('change', function () {
@@ -11,21 +13,22 @@ checkbox.addEventListener('change', function () {
         localStorage.setItem('data-theme', 'light')
     }
 })
-
 let trans = () => {
     document.documentElement.classList.add('transition');
     window.setTimeout(() => {
         document.documentElement.classList.remove('transition');
     }, 1000)
 }
-
 const tema = localStorage.getItem('data-theme')
 if (tema) {
     document.documentElement.setAttribute('data-theme', tema)
 }
+//-----------------------------------------------
 
-
-// Codigo de AOS
+//-----------------------------------------------
+// Iniciar AOSAnimation
+//-----------------------------------------------
 AOS.init({
     easing: 'ease-out-back', duration: 2000
 })
+//-----------------------------------------------

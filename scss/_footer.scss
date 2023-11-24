@@ -1,3 +1,4 @@
+/* ====== Footer ====== */
 footer {
     width: 100%;
     height: auto;
@@ -40,8 +41,8 @@ footer {
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 7px; // Hace que los enlaces sean círculos
-            transition: background-color 0.3s ease; // Agrega una transición de color suave
+            border-radius: 7px;
+            transition: background-color 0.3s ease;
 
             &:hover {
                 border: 1px solid $color-2;
